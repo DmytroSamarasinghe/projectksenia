@@ -1,0 +1,63 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: $text;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body {
+  font-family: $ff-r;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: $text;
+  // background-color: $bg;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.content {
+  flex: 1 0 auto;
+}
+.footer {
+  flex: 0 0 auto;
+}
+// .container-menu{
+// max-width: 1366px;
+// margin: 0 auto;
+// }
+.container {
+  max-width: 1196px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 47px;
+}
+//   .contant {
+//     padding: 120px 0 120px;
+//   }
+
+//   button{
+//     @include border();
+//   }
