@@ -566,7 +566,7 @@
 /////////////////////
 .media {
     .aboutMe__container-inner {
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
         justify-content: flex-start;
         width: 400px;
         margin-left: auto;
@@ -574,7 +574,7 @@
         .aboutMe__item-child {
             display: flex;
             flex-direction: column;
-            margin-left: 10px;    
+            margin-left: 10px;
 
             img+img {
                 margin-top: 10px;
@@ -590,12 +590,215 @@
             &:nth-child(4) {
                 img {
                     width: 425px;
-                } 
+                }
             }
         }
 
     }
 }
+
 //////////////
+.contacts {
+    background: #E51A4B;
+}
+
+.contacts__container {
+    padding: 40px 0 188px 190px;
+}
+
+.contacts__container-title {
+    margin-bottom: 40px;
+    color: #FFFFFF;
+}
+
+.contacts__container-post {
+    padding: 60px 92px 80px 93px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(108, 5, 30, 0.4);
+    margin-bottom: 53px;
+}
+
+.contacts__post-title {
+    margin-bottom: 40px;
+    text-align: center;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #992B2B;
+}
+
+.contacts__post-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts__post-item {
+    input {
+        background: #FFFFFF;
+        border: 1px solid #E0E0E0;
+        box-sizing: border-box;
+        padding: 14px 20px;
+
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        /* identical to box height, or 137% */
+
+
+        color: #7A7A7A;
+    }
+
+    input[name="name"] {
+        width: 240px;
+        height: 50px;
+    }
+
+    input[name="post"] {
+        width: 330px;
+        height: 50px;
+    }
+
+    button {
+        color: 0;
+        display: block;
+        cursor: pointer;
+        padding: 0;
+        border-width: 0;
+        border-color: none;
+    }
+
+    button[name="button"] {
+        width: 135px;
+        height: 50px;
+        background: #E51A4B;
+        box-shadow: 0px 4px 10px rgba(175, 7, 47, 0.3);
+
+
+        font-family: Overpass;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 23px;
+        /* identical to box height */
+
+        color: #FFFFFF;
+    }
+}
+
+.contacts__post-item+.contacts__post-item {
+    margin-left: 15px;
+}
+
+.contacts__container-inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contacts__container-item {
+    width: 50%;
+    margin-top: 30px;
+
+    a {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        /* identical to box height */
+
+        text-align: center;
+        letter-spacing: 0.04em;
+
+        color: #FFFFFF;
+
+        margin-left: 93px;
+        padding-left: 53px;
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: -4px;
+        }
+    }
+
+    .phone:before {
+        background-image: url(../images/icons/phone.svg);
+        width: 25px;
+        height: 25px;
+    }
+
+    .inst:before {
+        background-image: url(../images/icons/inst.svg);
+        width: 29.05px;
+        height: 29.05px;
+        top: -8px;
+    }
+
+    .post:before {
+        background-image: url(../images/icons/post.svg);
+        width: 28.67px;
+        height: 21.33px;
+        top: 0px;
+    }
+
+    .facebook:before {
+        background-image: url(../images/icons/facebook.svg);
+        width: 12.45px;
+        height: 24px;
+        left: 8px;
+    }
+}
+
+//////////////////
+.footer {
+    background: #E51A4B;
+    border-top: 1px solid #F0406B;
+}
+
+.footer__container {
+    padding: 20px 0;
+}
+
+.footer__container-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    span {
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 0.04em;
+
+        /* white white */
+
+        color: #F2F2F2;
+    }
+    a{
+        
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: #F2F2F2;
+    }
+}
 
 @import "media";
