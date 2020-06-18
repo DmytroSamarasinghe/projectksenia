@@ -21,5 +21,12 @@
     "magnific-popup": "^1.1.0",
     "normalize.css": "^8.0.1",
     "slick-carousel": "^1.8.1"
+  },
+  "dependencies": {
+    "hooper": "^0.3.4",
+    "vue": "^2.6.11",
+    "vue-carousel": "^0.18.0",
+    "vue-fullpage.js": "^0.1.5",
+    "vue-scrollmagic": "^1.2.0"
   }
 }

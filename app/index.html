@@ -3,20 +3,339 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <!-- <meta name="viewport" content="width=800"> -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Еда</title>
-    <link rel="shortcut icon" href="images/DS.png" type="image/png">
+    <!-- <link rel="shortcut icon" href="images/DS.png" type="image/png"> -->
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+    <script src="js/libs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="https://ssense.github.io/vue-carousel/js/vue-carousel.min.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <style>
+        /* html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        } */
+
+        .swiper-container,
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            overflow: hidden;
+        }
+
+        /* .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+             Center slide text vertically  
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        } */
+
+        .swiper-container-v {
+            background: #eee;
+        }
+    </style>
 </head>
 
 <body>
-    
+    <header class="header">
+        <div class="container">
+            <div class="header__box">
+                <div class="logo">
+                    <a href="#">
+                        <img src="images/logo/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="menu">
+                    <ul class="nav-bar">
+                        <li><a href="#">Обо мне</a></li>
+                        <li><a href="#">Консультации</a></li>
+                        <li><a href="#">Мои проекты</a></li>
+                        <li><a href="#">Книги</a></li>
+                        <li><a href="#">Халява, плиз!</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="swiper">
+        <!-- Swiper -->
+        <!-- <div class="container"> -->
+        <div class="container">
+            <div class="vertical swiper-pagination swiper-pagination-v"></div>
+        </div>
+
+        <div class=" swiper-container swiper-container-v">
+            <div class=" swiper-wrapper">
+                <!-- Vertical Slide 1 -->
+                <div class="swiper-slide">
+                    <div class="swiper-container swiper-container-h">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="profil__img">
+                                    <img class="profil__img-trap" src="images/purpurFon.png" alt="">
+                                    <div class="profil__img-woman"></div>
+                                </div>
+                                <div class="container">
+                                    <div class="profil__info">
+                                        <div class="profil__info-inner">
+                                            <div class="profil__info-item">
+                                                <div class="profil__info-title">
+                                                    Бизнесвумен
+                                                </div>
+                                                <div class="profil__info-text">
+                                                    Основала агентство контент-маркетинга Malkki Media, организатор
+                                                    мероприятий.
+                                                </div>
+                                            </div>
+                                            <div class="profil__info-item">
+                                                <div class="profil__info-title">
+                                                    писатель
+                                                </div>
+                                                <div class="profil__info-text">
+                                                    Автор книг о жизни и воспитании детей в Финляндии
+                                                </div>
+                                            </div>
+                                            <div class="profil__info-item">
+                                                <div class="profil__info-title">
+                                                    блогер
+                                                </div>
+                                                <div class="profil__info-text">
+                                                    В Instagram блог о бизнесе и текстах
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="profil__info-socia">
+                                            <a href="#" class="profil__info-instagram"></a>
+                                            <a href="#" class="profil__info-facebook"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="profil__img">
+                                    <img class="profil__img-trap" src="images/purpurFon.png" alt="">
+                                    <div class="profil__img-woman"></div>
+                                </div>
+                                <div class="container">
+                                    <div class="profil__info">
+                                        <div class="profil__info-inner">
+                                            <div class="profil__info-item">
+                                                <div class="profil__info-title">
+                                                    Бизнесвумен
+                                                </div>
+                                                <div class="profil__info-text">
+                                                    Основала агентство контент-маркетинга Malkki Media, организатор
+                                                    мероприятий.
+                                                </div>
+                                            </div>
+                                            <div class="profil__info-item">
+                                                <div class="profil__info-title">
+                                                    писатель
+                                                </div>
+                                                <div class="profil__info-text">
+                                                    Автор книг о жизни и воспитании детей в Финляндии
+                                                </div>
+                                            </div>
+                                            <div class="profil__info-item">
+                                                <div class="profil__info-title">
+                                                    блогер
+                                                </div>
+                                                <div class="profil__info-text">
+                                                    В Instagram блог о бизнесе и текстах
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="profil__info-socia">
+                                            <a href="#" class="profil__info-instagram"></a>
+                                            <a href="#" class="profil__info-facebook"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="profil__img">
+                                    <img class="profil__img-trap" src="images/purpurFon.png" alt="">
+                                    <div class="profil__img-woman"></div>
+                                </div>
+                                <div class="container">
+                                    <div class="profil__info">
+                                        <div class="profil__info-inner">
+                                            <div class="profil__info-item">
+                                                <div class="profil__info-title">
+                                                    Бизнесвумен
+                                                </div>
+                                                <div class="profil__info-text">
+                                                    Основала агентство контент-маркетинга Malkki Media, организатор
+                                                    мероприятий.
+                                                </div>
+                                            </div>
+                                            <div class="profil__info-item">
+                                                <div class="profil__info-title">
+                                                    писатель
+                                                </div>
+                                                <div class="profil__info-text">
+                                                    Автор книг о жизни и воспитании детей в Финляндии
+                                                </div>
+                                            </div>
+                                            <div class="profil__info-item">
+                                                <div class="profil__info-title">
+                                                    блогер
+                                                </div>
+                                                <div class="profil__info-text">
+                                                    В Instagram блог о бизнесе и текстах
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="profil__info-socia">
+                                            <a href="#" class="profil__info-instagram"></a>
+                                            <a href="#" class="profil__info-facebook"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Add Pagination -->
+                        <div class="swiper-button-next swiper-pagination-h"></div>
+                        <div class="swiper-button-prev swiper-pagination-h"></div>
+                    </div>
+                </div>
+                <!-- Vertical Slide 2 -->
+                <div class="swiper-slide">
+                    f
+                </div>
+                <!-- Vertical Slide 3 -->
+                <div class="swiper-slide">
+                    d
+                </div>
+                <!-- Vertical Slide 4 -->
+                <div class="swiper-slide">
+                    d
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <!-- </div> -->
+        </div>
+    </section>
+    <section class="aboutMe">
+        <div class="container">
+            <div class="aboutMe__container">
+                <div class="aboutMe__container-title">
+                    обо мне
+                </div>
+                <div class="aboutMe__container-info">
+                    <div class="aboutMe__container-text">
+                        <div class="aboutMe__container-paragraf">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua.
+                            </p>
+                            <p>
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                dolore eu fugiat nulla pariatur.
+                            </p>
+                        </div>
+                        <div class="aboutMe__container-paragraf">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua.
+                            </p>
+                            <p>
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                dolore eu fugiat nulla pariatur.
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="aboutMe__container-M">
+                        <img src="images/aboutMe/M.svg" alt="">
+                    </div>
+                    <div class="aboutMe__container-img">
+                        <div class="aboutMe__container-inner">
+                            <div class="aboutMe__container-item"><img src="images/aboutMe/aboutMe1.jpg" alt=""></div>
+                            <div class="aboutMe__container-item"><img src="images/aboutMe/aboutMe2.jpg" alt=""></div>
+                            <div class="aboutMe__container-item"><img src="images/aboutMe/aboutMe3.jpg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiperH = new Swiper('.swiper-container-h', {
+            // direction: 'horizontal',
+            // spaceBetween: 50,
+            // pagination: {
+            //     el: '.swiper-pagination-h',
+            //     clickable: true,
+            // },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            speed: 1000,
+            controller: false,
+        });
+        var swiperV = new Swiper('.swiper-container-v', {
+            direction: 'vertical',
+            spaceBetween: 50,
+            pagination: {
+                el: '.swiper-pagination-v',
+                clickable: true,
+            },
+            mousewheel: true,
+            // hashNavigation: {
+            //     replaceState: true,
+            // },
+        });
+    </script>
 </body>
 
 </html>
