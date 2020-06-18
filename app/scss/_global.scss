@@ -14,9 +14,11 @@ body {
   position: relative;
   overflow-x: hidden;
 }
-p{
+
+p {
   margin: 0;
 }
+
 a {
   display: inline-block;
   text-decoration: none;
@@ -76,7 +78,7 @@ body {
 //// 
 .vertical {
   position: absolute;
-  top: 50%; 
+  top: 50%;
   display: flex;
   flex-direction: column;
 }
@@ -97,6 +99,19 @@ body {
     background: var(--swiper-pagination-color, var(--swiper-theme-color));
   }
 
+}
+
+.title {
+  font-family: Cyrvetica v2 Extra Outline;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+
+  color: #E51A4B;
 }
 
 :focus {
