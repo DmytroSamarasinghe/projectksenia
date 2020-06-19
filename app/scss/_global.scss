@@ -12,7 +12,7 @@ html,
 body {
   height: 100%;
   position: relative;
-  overflow-x: hidden;
+  // overflow-x: hidden;
 }
 
 p {
@@ -139,4 +139,16 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
   }
+} 
+[data-aos="new-animation"]{
+overflow: hidden;    
+}
+[data-aos="new-animation"].aos-animation{
+overflow: auto;   
+}
+[data-aos="new-1"]{ 
+  
+}
+[data-aos="new-1"].aos-animation{ 
+ 
 }

@@ -8,21 +8,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Еда</title>
     <!-- <link rel="shortcut icon" href="images/DS.png" type="image/png"> -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
     <script src="js/libs.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
-    <script src="https://ssense.github.io/vue-carousel/js/vue-carousel.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script> -->
+    <!-- <script src="https://ssense.github.io/vue-carousel/js/vue-carousel.min.js"></script> -->
 
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
     <style>
-        /* html,
-        body {
-            position: relative;
-            height: 100%;
-        }
+        html,
+        body {}
 
+        /*
         body {
             background: #eee;
             font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -31,11 +31,51 @@
             margin: 0;
             padding: 0;
         } */
+        body {
+            font-family: Helvetica, Tahoma;
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: border-box;
+        }
+
+        .aos-all {
+            width: 1000px;
+            max-width: 98%;
+            margin: 10vh auto 0 auto;
+        }
+
+        .aos-item {
+            display: inline-block;
+            float: left;
+            width: 33.3333%;
+            height: 300px;
+            padding: 20px;
+        }
+
+        .aos-item__inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            float: left;
+            background: #1da4e2;
+            line-height: 260px;
+            text-align: center;
+            color: #fff;
+        }
+
+        @media screen and (max-width: 800px) {
+            .aos-item {
+                width: 50%;
+            }
+        }
 
         .swiper-container,
         .swiper {
-            width: 100%;
-            height: 100%;
+            /* width: 100%; */
+            /* height: 100%; */
         }
 
         .swiper-slide {
@@ -69,7 +109,57 @@
 </head>
 
 <body>
-    <header class="header">
+    <div class="pigination "> 
+        <div class="pigination-button">
+            <div class="pigination-number pigination-swiper pigination-off">
+                01
+            </div>
+            <span></span> 
+        </div>  
+        <div class="pigination-button">
+            <div class="pigination-number pigination-aboutMe pigination-off">
+                02
+            </div>
+            <span></span> 
+        </div> 
+        <div class="pigination-button pigination-consultation pigination-white">
+            <div class="pigination-number  pigination-off">
+                03
+            </div>
+            <span></span> 
+        </div> 
+        <div class="pigination-button">
+            <div class="pigination-number pigination-freebie pigination-off">
+                04
+            </div>
+            <span></span> 
+        </div> 
+        <div class="pigination-button">
+            <div class="pigination-number pigination-projects pigination-off ">
+                05
+            </div>
+            <span></span> 
+        </div> 
+        <div class="pigination-button">
+            <div class="pigination-number pigination-books pigination-off">
+                06
+            </div>
+            <span></span> 
+        </div> 
+        <div class="pigination-button">
+            <div class="pigination-number pigination-aboutMe-media pigination-off">
+                07
+            </div>
+            <span></span> 
+        </div> 
+        <div class="pigination-button pigination-white">
+            <div class="pigination-number pigination-contacts pigination-off">
+                08
+            </div>
+            <span></span> 
+        </div> 
+    </div>
+    <header class="header" data-aos="zoom-in-up">
         <div class="container">
             <div class="header__box">
                 <div class="logo">
@@ -90,168 +180,169 @@
             </div>
         </div>
     </header>
-    <section class="swiper">
+    <section id="pigination-swiper__start" class="swiper">
         <!-- Swiper -->
         <!-- <div class="container"> -->
-        <div class="container">
-            <div class="vertical swiper-pagination swiper-pagination-v"></div>
-        </div>
 
-        <div class=" swiper-container swiper-container-v">
-            <div class=" swiper-wrapper">
-                <!-- Vertical Slide 1 -->
+        <!-- <div class="container">
+            <div class="vertical swiper-pagination swiper-pagination-v"></div>
+        </div> -->
+
+        <!-- <div class=" swiper-container swiper-container-v"> -->
+        <!-- <div class=" swiper-wrapper"> -->
+        <!-- Vertical Slide 1 -->
+        <!-- <div class="swiper-slide"> -->
+        <div class="swiper-container swiper-container-h">
+            <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <div class="swiper-container swiper-container-h">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="profil__img">
-                                    <img class="profil__img-trap" src="images/purpurFon.png" alt="">
-                                    <div class="profil__img-woman"></div>
+                    <div class="profil__img">
+                        <img class="profil__img-trap" src="images/purpurFon.png" alt="">
+                        <div class="profil__img-woman"></div>
+                    </div>
+                    <div class="container">
+                        <div class="profil__info">
+                            <div class="profil__info-inner">
+                                <div class="profil__info-item">
+                                    <div class="profil__info-title">
+                                        Бизнесвумен
+                                    </div>
+                                    <div class="profil__info-text">
+                                        Основала агентство контент-маркетинга Malkki Media, организатор
+                                        мероприятий.
+                                    </div>
                                 </div>
-                                <div class="container">
-                                    <div class="profil__info">
-                                        <div class="profil__info-inner">
-                                            <div class="profil__info-item">
-                                                <div class="profil__info-title">
-                                                    Бизнесвумен
-                                                </div>
-                                                <div class="profil__info-text">
-                                                    Основала агентство контент-маркетинга Malkki Media, организатор
-                                                    мероприятий.
-                                                </div>
-                                            </div>
-                                            <div class="profil__info-item">
-                                                <div class="profil__info-title">
-                                                    писатель
-                                                </div>
-                                                <div class="profil__info-text">
-                                                    Автор книг о жизни и воспитании детей в Финляндии
-                                                </div>
-                                            </div>
-                                            <div class="profil__info-item">
-                                                <div class="profil__info-title">
-                                                    блогер
-                                                </div>
-                                                <div class="profil__info-text">
-                                                    В Instagram блог о бизнесе и текстах
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="profil__info-socia">
-                                            <a href="#" class="profil__info-instagram"></a>
-                                            <a href="#" class="profil__info-facebook"></a>
-                                        </div>
+                                <div class="profil__info-item">
+                                    <div class="profil__info-title">
+                                        писатель
+                                    </div>
+                                    <div class="profil__info-text">
+                                        Автор книг о жизни и воспитании детей в Финляндии
+                                    </div>
+                                </div>
+                                <div class="profil__info-item">
+                                    <div class="profil__info-title">
+                                        блогер
+                                    </div>
+                                    <div class="profil__info-text">
+                                        В Instagram блог о бизнесе и текстах
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="profil__img">
-                                    <img class="profil__img-trap" src="images/purpurFon.png" alt="">
-                                    <div class="profil__img-woman"></div>
-                                </div>
-                                <div class="container">
-                                    <div class="profil__info">
-                                        <div class="profil__info-inner">
-                                            <div class="profil__info-item">
-                                                <div class="profil__info-title">
-                                                    Бизнесвумен
-                                                </div>
-                                                <div class="profil__info-text">
-                                                    Основала агентство контент-маркетинга Malkki Media, организатор
-                                                    мероприятий.
-                                                </div>
-                                            </div>
-                                            <div class="profil__info-item">
-                                                <div class="profil__info-title">
-                                                    писатель
-                                                </div>
-                                                <div class="profil__info-text">
-                                                    Автор книг о жизни и воспитании детей в Финляндии
-                                                </div>
-                                            </div>
-                                            <div class="profil__info-item">
-                                                <div class="profil__info-title">
-                                                    блогер
-                                                </div>
-                                                <div class="profil__info-text">
-                                                    В Instagram блог о бизнесе и текстах
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="profil__info-socia">
-                                            <a href="#" class="profil__info-instagram"></a>
-                                            <a href="#" class="profil__info-facebook"></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="profil__img">
-                                    <img class="profil__img-trap" src="images/purpurFon.png" alt="">
-                                    <div class="profil__img-woman"></div>
-                                </div>
-                                <div class="container">
-                                    <div class="profil__info">
-                                        <div class="profil__info-inner">
-                                            <div class="profil__info-item">
-                                                <div class="profil__info-title">
-                                                    Бизнесвумен
-                                                </div>
-                                                <div class="profil__info-text">
-                                                    Основала агентство контент-маркетинга Malkki Media, организатор
-                                                    мероприятий.
-                                                </div>
-                                            </div>
-                                            <div class="profil__info-item">
-                                                <div class="profil__info-title">
-                                                    писатель
-                                                </div>
-                                                <div class="profil__info-text">
-                                                    Автор книг о жизни и воспитании детей в Финляндии
-                                                </div>
-                                            </div>
-                                            <div class="profil__info-item">
-                                                <div class="profil__info-title">
-                                                    блогер
-                                                </div>
-                                                <div class="profil__info-text">
-                                                    В Instagram блог о бизнесе и текстах
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="profil__info-socia">
-                                            <a href="#" class="profil__info-instagram"></a>
-                                            <a href="#" class="profil__info-facebook"></a>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="profil__info-socia">
+                                <a href="#" class="profil__info-instagram"></a>
+                                <a href="#" class="profil__info-facebook"></a>
                             </div>
                         </div>
-
-                        <!-- Add Pagination -->
-                        <div class="swiper-button-next swiper-pagination-h"></div>
-                        <div class="swiper-button-prev swiper-pagination-h"></div>
                     </div>
                 </div>
-                <!-- Vertical Slide 2 -->
                 <div class="swiper-slide">
-                    f
+                    <div class="profil__img">
+                        <img class="profil__img-trap" src="images/purpurFon.png" alt="">
+                        <div class="profil__img-woman"></div>
+                    </div>
+                    <div class="container">
+                        <div class="profil__info">
+                            <div class="profil__info-inner">
+                                <div class="profil__info-item">
+                                    <div class="profil__info-title">
+                                        Бизнесвумен
+                                    </div>
+                                    <div class="profil__info-text">
+                                        Основала агентство контент-маркетинга Malkki Media, организатор
+                                        мероприятий.
+                                    </div>
+                                </div>
+                                <div class="profil__info-item">
+                                    <div class="profil__info-title">
+                                        писатель
+                                    </div>
+                                    <div class="profil__info-text">
+                                        Автор книг о жизни и воспитании детей в Финляндии
+                                    </div>
+                                </div>
+                                <div class="profil__info-item">
+                                    <div class="profil__info-title">
+                                        блогер
+                                    </div>
+                                    <div class="profil__info-text">
+                                        В Instagram блог о бизнесе и текстах
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profil__info-socia">
+                                <a href="#" class="profil__info-instagram"></a>
+                                <a href="#" class="profil__info-facebook"></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <!-- Vertical Slide 3 -->
                 <div class="swiper-slide">
-                    d
-                </div>
-                <!-- Vertical Slide 4 -->
-                <div class="swiper-slide">
-                    d
+                    <div class="profil__img">
+                        <img class="profil__img-trap" src="images/purpurFon.png" alt="">
+                        <div class="profil__img-woman"></div>
+                    </div>
+                    <div class="container">
+                        <div class="profil__info">
+                            <div class="profil__info-inner">
+                                <div class="profil__info-item">
+                                    <div class="profil__info-title">
+                                        Бизнесвумен
+                                    </div>
+                                    <div class="profil__info-text">
+                                        Основала агентство контент-маркетинга Malkki Media, организатор
+                                        мероприятий.
+                                    </div>
+                                </div>
+                                <div class="profil__info-item">
+                                    <div class="profil__info-title">
+                                        писатель
+                                    </div>
+                                    <div class="profil__info-text">
+                                        Автор книг о жизни и воспитании детей в Финляндии
+                                    </div>
+                                </div>
+                                <div class="profil__info-item">
+                                    <div class="profil__info-title">
+                                        блогер
+                                    </div>
+                                    <div class="profil__info-text">
+                                        В Instagram блог о бизнесе и текстах
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profil__info-socia">
+                                <a href="#" class="profil__info-instagram"></a>
+                                <a href="#" class="profil__info-facebook"></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
             <!-- Add Pagination -->
-            <!-- </div> -->
+            <div class="swiper-button-next swiper-pagination-h"></div>
+            <div class="swiper-button-prev swiper-pagination-h"></div>
         </div>
+        <!-- </div> -->
+        <!-- Vertical Slide 2 -->
+        <!-- <div class="swiper-slide"> -->
+        <!-- f -->
+        <!-- </div> -->
+        <!-- Vertical Slide 3 -->
+        <!-- <div class="swiper-slide"> -->
+        <!-- d -->
+        <!-- </div> -->
+        <!-- Vertical Slide 4 -->
+        <!-- <div class="swiper-slide"> -->
+        <!-- d -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- Add Pagination -->
+        <!-- </div> -->
     </section>
-    <section class="aboutMe">
-        <div class="container">
+
+    <section id="pigination-swiper__end"  class="aboutMe" >
+        <div id="pigination-aboutMe__start" class="container" >
             <div class="aboutMe__container">
                 <div class="aboutMe__container-title title">
                     обо мне
@@ -300,8 +391,8 @@
         </div>
     </section>
 
-    <section class="consultation">
-        <div class="container">
+    <section id="pigination-aboutMe__end" class="consultation" >
+        <div id="pigination-consultation__start" class="container">
             <div class="consultation__container">
                 <div class="consultation__container-title title">
                     Индивидуальные консультации
@@ -344,8 +435,8 @@
             </div>
         </div>
     </section>
-    <section class="freebie">
-        <div class="container">
+    <section id="pigination-consultation__end" class="freebie">
+        <div id="pigination-freebie__start" class="container">
             <div class="freebie__container">
                 <div class="freebie__container-title title">
                     Халява, плиз!
@@ -409,8 +500,8 @@
             </div>
         </div>
     </section>
-    <section class="projects">
-        <div class="container">
+    <section id="pigination-freebie__end" class="projects">
+        <div id="pigination-projects__start" class="container">
             <div class="projects__container">
                 <div class="projects__container-title title">
                     Мои проекты
@@ -504,9 +595,8 @@
             </div>
         </div>
     </section>
-
-    <section class="books">
-        <div class="container">
+    <section id="pigination-projects__end" class="books">
+        <div id="pigination-books__start" class="container">
             <div class="books__container">
                 <div class="books__container-title title">
                     Книги
@@ -514,7 +604,7 @@
                 <div class="books__container-inner">
                     <div class="books__container-item">
                         <div class="books__item-img img-foot__left">
-                            <img src="images/books/books1.svg" alt="">
+                            <img src="images/books/books1.svg" alt="" data-aos="zoom-in-up">
                         </div>
                         <div class="books__item-info">
                             <div class="books__item-title">
@@ -532,7 +622,7 @@
                     </div>
                     <div class="books__container-item">
                         <div class="books__item-img img-foot__right">
-                            <img src="images/books/books2.svg" alt="">
+                            <img src="images/books/books2.svg" alt="" data-aos="zoom-in-up">
                         </div>
                         <div class="books__item-info">
                             <div class="books__item-title">
@@ -560,8 +650,8 @@
     </section>
 
 
-    <section class="aboutMe media">
-        <div class="container">
+    <section id="pigination-books__end" class="aboutMe media">
+        <div id="pigination-aboutMe-media__start" class="container">
             <div class="aboutMe__container">
                 <div class="aboutMe__container-title title">
                     обо мне
@@ -611,8 +701,8 @@
             </div>
         </div>
     </section>
-    <section class="contacts">
-        <div class="container">
+    <section id="pigination-aboutMe-media__end" class="contacts">
+        <div id="pigination-contacts__start" class="container">
             <div class="contacts__container">
                 <div class="contacts__container-title title">
                     Контакты
@@ -650,7 +740,7 @@
             </div>
         </div>
     </section>
-    <footer class="footer">
+    <footer id="pigination-contacts__end" class="footer">
         <div class="container">
             <div class="footer__container">
                 <div class="footer__container-info">
@@ -663,18 +753,19 @@
                     <span>
                         Developer
                         <a href="#">
-                            ProSofta 
+                            ProSofta
                         </a>
                     </span>
                 </div>
             </div>
         </div>
-    </footer>
+    </footer><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
     <script src="js/main.js"></script>
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.css">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js"></script>
     <!-- Initialize Swiper -->
     <script>
         var swiperH = new Swiper('.swiper-container-h', {

@@ -2,6 +2,11 @@
 @import "global";
 @import "fonts";
 
+.header {
+    // padding-bottom: 500px;
+    display: none;
+}
+
 .header__box {
     display: flex;
     justify-content: space-between;
@@ -775,7 +780,6 @@
     align-items: center;
 
     span {
-
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
@@ -788,8 +792,9 @@
 
         color: #F2F2F2;
     }
-    a{
-        
+
+    a {
+
         font-family: Roboto;
         font-style: normal;
         font-weight: bold;
@@ -801,4 +806,72 @@
     }
 }
 
+/////////////////////////*/*/*/*/**/*/*/*//////
+.pigination {
+    position: fixed;
+    width: 30px;
+    height: 100px;
+    top: 50%;
+    left: 10%;
+    transform: (-50%, -50%);
+}
+
+.pigination-number {
+    &.pigination-off {
+        overflow: hidden;
+        width: 0;
+        opacity: 0;
+        transition-property: opacity, transform;
+    }
+
+    &.pigination-on {
+        overflow: auto;
+        width: 20px;
+        margin-right: 8px;
+        opacity: 1;
+        transform: translateZ(0);
+        transition-duration: .5s;
+        transition-timing-function: ease;
+    }
+}
+
+.pigination-box.aos-init {
+    width: 0;
+    color: #000;
+
+    &.aos-animate {
+        width: auto;
+    }
+}
+
+.pigination-button {
+    width: 78px;
+    height: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    span {
+        display: block;
+        background-color: #E51A4B;
+        height: 2px;
+        width: 50px;
+
+        .aos-init.aos-animate {
+            width: 100%;
+        }
+    }
+    // &.pigination-white{
+    //    color: #FFFFFF;
+    //     span {
+    //         background-color: #FFFFFF; 
+    //     }
+    // }
+}
+
+[data-aos-anchor=".headerA"] {
+    background-color: #E5194A;
+}
+
+/////////////////////6
 @import "media";
