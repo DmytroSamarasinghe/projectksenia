@@ -4,7 +4,11 @@
 
 .header {
     // padding-bottom: 500px;
-    display: none;
+    // display: none;
+    &.g{
+        background-color: red;
+        position: fixed;
+    }
 }
 
 .header__box {
@@ -814,25 +818,33 @@
     top: 50%;
     left: 10%;
     transform: (-50%, -50%);
+
+    &.white {
+        background-color: #000;
+    }
+}
+
+.pigination>.pigination-on.pigination-white {
+    background-color: #992B2B;
 }
 
 .pigination-number {
-    &.pigination-off {
-        overflow: hidden;
-        width: 0;
-        opacity: 0;
-        transition-property: opacity, transform;
-    }
+    // &.pigination-off {
+    overflow: hidden;
+    width: 0;
+    opacity: 0;
+    transition-property: opacity, transform;
+    // }
 
-    &.pigination-on {
-        overflow: auto;
-        width: 20px;
-        margin-right: 8px;
-        opacity: 1;
-        transform: translateZ(0);
-        transition-duration: .5s;
-        transition-timing-function: ease;
-    }
+    // &.pigination-on {
+    //     overflow: auto;
+    //     width: 20px;
+    //     margin-right: 8px;
+    //     opacity: 1;
+    //     transform: translateZ(0);
+    //     transition-duration: .5s;
+    //     transition-timing-function: ease;
+    // }
 }
 
 .pigination-box.aos-init {
@@ -861,12 +873,36 @@
             width: 100%;
         }
     }
+
     // &.pigination-white{
-    //    color: #FFFFFF;
+    //    color: #e90f0f;
     //     span {
-    //         background-color: #FFFFFF; 
+    //         background-color: #eb2020; 
     //     }
     // }
+    &.pigination-on {
+        &>.pigination-number {
+            overflow: auto;
+            width: 20px;
+            margin-right: 8px;
+            opacity: 1;
+            transform: translateZ(0);
+            transition-duration: .5s;
+            transition-timing-function: ease;
+            color: #E51A4B;
+        }
+
+        &.pigination-white {
+            &>.pigination-number {
+                color: #ffffff;
+            }
+
+            span {
+                background-color: #ffffff;
+            }
+        }
+
+    }
 }
 
 [data-aos-anchor=".headerA"] {

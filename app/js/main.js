@@ -111,28 +111,147 @@ $(window).scroll(function () {
 //         $('header').removeClass('header-fixed');
 //     }
 // })
-function pigination(start, end, el) {
+var block_show = null;
+function pigination(start, el) {
     $(document).ready(function () {
-        $(window).resize(function () { 
-            var s_body = $(start).offset();
-            var e_body = $(end).offset();
+        $(window).resize(function () {
+            var s_body = $(start).offset().top,
+                // var e_body = $(end).offset();
+                height = $(start).height();
             $(document).scroll(function () {
                 var y = $(this).scrollTop();
-                if ((y >= s_body.top) && (y < e_body.top)) {
-                    $(el).addClass('pigination-on'); 
+                var a = $(el).hasClass('pigination-white');
+                var b = $(el).hasClass('pigination-on');
+                var v = $(el).hasClass('pigination-off');
+                // if ((y >= s_body.top) && (y < e_body.top)) {
+                if ((y >= s_body - 150) && (y < (s_body + height - 150))) {
+                    $(el).removeClass('pigination-off');
+                    $(el).addClass('pigination-on');
+                    // if ((block_show == null) || (block_show == false)) {
+                    // }
+                    // block_show = true;   
+                    // if ((a = ($(el + '.pigination-button').hasClass('pigination-white' + 'pigination-on'))) && (a == false)) {
+
+                    console.log(a + '  a1'); //true
+                    console.log(b + '  b1'); //false
+                    if ((a == true) && (b == true)) {
+                        // if (($('.pigination-button').hasClass('pigination-white')) && ($('.pigination-button').hasClass('pigination-on'))) {
+                        // if ((block_show == null) || (block_show == false)) {
+                        // }
+                        $('.pigination').addClass('white');
+                        $('.header').addClass('g');
+                        console.log('я присутствую  ');
+                        console.log(a + '  a11');
+                        console.log(b + '  b11');
+                    }
+                    // block_show = true;
                 }
                 else {
-                    $(el).removeClass('pigination-on'); 
+                    console.log(a + '  a2'); //true
+                    console.log(b + '  b2'); //false
+                    console.log(v + '  v2'); //false
+                    $(el).removeClass('pigination-on');
+                    $(el).addClass('pigination-off');
+                    console.log(v + '  v2'); //false
+                    // if ((($('.pigination-button').hasClass('pigination-white')) == true) && (($('.pigination').hasClass('white')) == true)){
+                    // if (($('.pigination').hasClass('white'))) {
+                    // if ((block_show == null) || (block_show == true)) {
+                    if ((a == true) && (b == true)) {
+                        // if ((a = ($(el + '.pigination-button').hasClass('pigination-white'))) && (a == false)) {
+                        $('.pigination').removeClass('white');
+                        $('.header').removeClass('g');
+                        console.log('меня нет на странице  ');
+                        // }
+                        console.log(a + '  a22');
+                        console.log(b + '  b22');
+                    }
+                    // a = false
+                    // block_show = false;
                 }
-            }) 
+            })
         }).resize();
     })
-} 
-pigination('#pigination-swiper__start','#pigination-swiper__end','.pigination-swiper');
-pigination('#pigination-aboutMe__start','#pigination-aboutMe__end','.pigination-aboutMe');
-pigination('#pigination-consultation__start','#pigination-consultation__end','.pigination-consultation');
-pigination('#pigination-freebie__start','#pigination-freebie__end','.pigination-freebie');
-pigination('#pigination-projects__start','#pigination-projects__end','.pigination-projects');
-pigination('#pigination-books__start','#pigination-books__end','.pigination-books');
-pigination('#pigination-aboutMe-media__start','#pigination-aboutMe-media__end','.pigination-aboutMe-media');
-pigination('#pigination-contacts__start','#pigination-contacts__end','.pigination-contacts');
+}
+// alert(document.getElementById('pigination-consultation__end'));
+// pigination('#pigination-swiper__start', '.pigination-swiper'); 
+pigination('.swiper', '.pigination-swiper');
+pigination('.aboutMe', '.pigination-aboutMe');
+pigination('.consultation', '.pigination-consultation');
+pigination('.freebie', '.pigination-freebie');
+pigination('.projects', '.pigination-projects');
+pigination('.books', '.pigination-books');
+pigination('.media', '.pigination-aboutMe-media');
+pigination('.contacts', '.pigination-contacts');
+// .pigination-on.pigination-white
+// var block_show = null;
+// var block_show = document.getElementsByClassName('.pigination-on.pigination-white');
+var block_show = null;
+function scrollTracking(box, el) {
+    var wt = $(window).scrollTop();
+    // var wh = $(window).height();
+    var et = $(box).offset().top,
+        eh = $(box).outerHeight();
+
+    // if (et >= wt && et + eh <= wh + wt) {
+    if ((wt >= et - 150) && (wt < (et + eh - 150))) {
+        $(el).addClass('pigination-on');
+        if (block_show == null || block_show == false) {
+            // if (($('.pigination-button').hasClass('pigination-on')) && ($('.pigination-button').hasClass(block_show))) {
+            //   $('#console').html('Блок active полностью виден');
+            console.log('я присутствую' + block_show);
+            $('.pigination').addClass('white');
+            $('.header').addClass('g');
+        }
+        block_show = true;
+    } else {
+        $(el).removeClass('pigination-on');
+        if (block_show == null || block_show == true) {
+            // if (($('.pigination-button').hasClass(block_show))) {
+            console.log('меня нет на странице' + block_show);
+            $('.pigination').removeClass('white');
+            $('.header').removeClass('g');
+            //   $('#console').html('');
+        }
+        block_show = false;
+    }
+}
+
+function scroll(el1, el2) {
+    $(window).scroll(function () {
+        scrollTracking(el1, el2);
+    });
+
+    $(document).ready(function () {
+        scrollTracking(el1, el2);
+    });
+}
+
+// scroll('.swiper', '.pigination-swiper');
+// scroll('.aboutMe', '.pigination-aboutMe');
+// scroll('.consultation', '.pigination-consultation');
+// scroll('.freebie', '.pigination-freebie');
+// scroll('.projects', '.pigination-projects');
+// scroll('.books', '.pigination-books');
+// scroll('.media', '.pigination-aboutMe-media');
+// scroll('.contacts', '.pigination-contacts');
+// $(function() {
+// $(document).ready(function () {
+
+//     $(window).resize(function () {
+
+//         var element=document.getElementsByClassName('.pigination-on.pigination-white'); 
+//         if(element){alert('меня нет на странице');} else {alert('я присутствую');}
+
+//         // $(document).scroll(function () {
+//         //     var s = $(this).scrollTop();
+//             // if (!element) {
+//             //     $('.pigination').addClass('white');
+//             // }
+//             // else {
+//             //     $('.pigination').removeClass('white');
+//             // }
+//         // }
+
+//     }).resize();
+// });
+// })

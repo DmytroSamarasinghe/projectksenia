@@ -23,6 +23,7 @@
     "slick-carousel": "^1.8.1"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "hooper": "^0.3.4",
     "vue": "^2.6.11",
     "vue-carousel": "^0.18.0",
