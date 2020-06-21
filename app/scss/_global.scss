@@ -21,7 +21,7 @@ p {
 
 a {
   display: inline-block;
-  text-decoration: none;
+  text-decoration: none; 
   // color: $text;
 }
 
@@ -32,15 +32,12 @@ li {
   list-style: none;
 }
 
-body {
-  // font-family: $ff-r; 
+body { 
   font-family: $ff;
   font-weight: $fw;
   font-size: $fz;
   line-height: $lh;
-  color: $red;
-  // color: $text;
-  // background-color: $bg;
+  color: $red; 
 }
 
 .wrapper {

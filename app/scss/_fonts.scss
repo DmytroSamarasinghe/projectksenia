@@ -1,0 +1,70 @@
+///////////Roboto
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto'),
+        local('Roboto-Regular'),
+        url('../fonts/Roboto.woff2') format('woff2'),
+        url('../fonts/Roboto.woff') format('woff'),
+        url('../fonts/Roboto.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src:
+        local('Roboto Medium'),
+        local('Roboto-Medium'),
+        url('../fonts/Robotomedium.woff2') format('woff2'),
+        url('../fonts/Robotomedium.woff') format('woff'),
+        url('../fonts/Robotomedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src:
+        local('Roboto Bold'),
+        local('Roboto-Bold'),
+        url('../fonts/Robotobold.woff2') format('woff2'),
+        url('../fonts/Robotobold.woff') format('woff'),
+        url('../fonts/Robotobold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+////Overpass
+@font-face {
+    font-family: 'Overpass';
+    src: local('Overpass Regular'),
+        local('Overpass-Reg'),
+        url('../fonts/overpassregular.woff2') format('woff2'),
+        url('../fonts/overpassregular.woff') format('woff'),
+        url('../fonts/overpassregular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Overpass';
+    src: local('Overpass Bold'),
+        local('Overpass-Bold'),
+        url('../fonts/overpassbold.woff2') format('woff2'),
+        url('../fonts/overpassbold.woff') format('woff'),
+        url('../fonts/overpassbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+////Cyrvetica v2 Extra Outline
+@font-face {
+    font-family: 'Cyrvetica v2 Extra Outline';
+    src: url('../fonts/Cyrvetica v2 Extra Outline Normal.eot');
+    src: url('../fonts/Cyrvetica v2 Extra Outline Normal.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Cyrvetica v2 Extra Outline Normal.woff') format('woff'),
+        url('../fonts/Cyrvetica v2 Extra Outline Normal.ttf') format('truetype'),
+        url('../fonts/Cyrvetica v2 Extra Outline Normal.otf') format('opentype'),
+        url('../fonts/Cyrvetica v2 Extra Outline Normal.svg#Cyrvetica v2 Extra Outline Normal') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal; 
+}

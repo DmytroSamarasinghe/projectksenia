@@ -3,15 +3,12 @@
 @import "fonts";
 
 .header {
-    // padding-bottom: 500px;
-    // display: none;
     position: fixed;
     width: 100%;
     background-color: #fff;
     z-index: 2;
 
     &.g {
-        // background-color: transparent;   
         background: #E51A4B;
 
         .header__logo-on {
@@ -42,10 +39,6 @@
     padding: 20px 0;
 }
 
-.logo {}
-
-.menu {}
-
 .nav-bar {
     display: flex;
     justify-content: space-between;
@@ -58,13 +51,15 @@
 
     a {
         color: $red;
+        font-weight: 500;
     }
 }
 
 ///////////////////
-.swiper{
-    overflow-x: auto; 
+.swiper {
+    overflow-x: auto;
 }
+
 /////////
 .profil {
     position: relative;
@@ -77,23 +72,11 @@
 }
 
 .profil__img-trap {
-    // width: 1147px;
-    // height: 816px;
     position: absolute;
     z-index: 0;
-    // //@warn
-    // // top:0;
     top: 0;
     left: 50%;
-    // // right: 0;
-    // /////
-    // top: 50%;
-    // right: 430px;//
     margin: 0px 0 0 -90px;
-    // // margin: 0 -225px -72px 0 ;
-    // background-image: url(../images/purpurFon.png);
-    // background-repeat: no-repeat;
-    // overflow: hidden;
 }
 
 .profil__img-woman {
@@ -105,7 +88,6 @@
     top: 63px;
     background-image: url(../images/woman.png);
     background-repeat: no-repeat;
-    // padding: 20px 50px 0 0;
 }
 
 .profil__info {
@@ -129,7 +111,6 @@
 
 .profil__info-title {
     font-family: Cyrvetica v2 Extra Outline;
-    font-weight: 400;
     font-size: 48px;
     line-height: 56px;
     text-transform: uppercase;
@@ -137,11 +118,7 @@
 }
 
 .profil__info-text {
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 21px;
     color: #000000;
-    // max-width: 100%;
 }
 
 .profil__info-socia {
@@ -163,12 +140,7 @@
     background-repeat: no-repeat;
 }
 
-///////////
-
-.aboutMe {
-    // 
-}
-
+/////////// 
 .aboutMe__container {
     padding: 70px 0 151px 160px;
 }
@@ -199,13 +171,10 @@
     box-shadow: -3px 3px 10px rgba(81, 21, 35, 0.12);
 
     p {
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
         line-height: 24px;
         color: #FFFFFF;
         margin-bottom: 10px;
+        letter-spacing: 0.04em;
     }
 }
 
@@ -249,9 +218,7 @@
 
 }
 
-/////////////////
-
-.consultation {}
+///////////////// 
 
 .consultation__container {
     padding: 33px 0 66px 159px;
@@ -276,10 +243,6 @@
         height: 95%;
     }
 
-    img:hover {
-        // background: rgba(229, 26, 75, 0.7);
-    }
-
     .consultation__item-shadov {
         position: absolute;
         display: block;
@@ -297,12 +260,7 @@
             margin: 0 auto;
             left: 0;
             right: 0;
-
-            font-family: Roboto;
-            font-style: normal;
             font-weight: 500;
-            font-size: 18px;
-            line-height: 21px;
             color: #FFFFFF;
         }
     }
@@ -319,7 +277,7 @@
     span {
         background: #E51A4B;
         padding: 5px 10px;
-        font-weight: bold;
+        font-weight: 500;
         font-size: 24px;
         line-height: 28px;
         color: #FFFFFF;
@@ -371,6 +329,9 @@
 }
 
 .freebie__item-title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
     color: #FFFFFF;
     flex: 1 0 auto;
 }
@@ -385,7 +346,8 @@
 
 .freebie__item-btn {
     background: #E5194A;
-    box-shadow: 0px 4px 10px rgba(108, 5, 30, 0.4), 0px -4px 4px rgba(255, 255, 255, 0.25);
+    box-shadow: 0px 4px 10px rgba(108, 5, 30, 0.4), 0px -4px 4px rgba(255, 255, 255, 0.25); 
+    font-weight: 500;
 }
 
 .freebie__item-btn+.freebie__item-btn {
@@ -396,7 +358,6 @@
     color: #FFFFFF;
     border-radius: 15px;
     padding: 17px 20px;
-    // box-shadow: 0px 4px 10px rgba(108, 5, 30, 0.4); 
 }
 
 .btn-download {
@@ -417,10 +378,7 @@
     }
 }
 
-/////////////////////
-
-.projects {}
-
+///////////////////// 
 .projects__container {
     padding: 30px 0 56px 160px;
 }
@@ -440,8 +398,6 @@
     width: 285px;
     margin-top: 20px;
 }
-
-.projects__item-info {}
 
 .projects__item-img {
     height: 236px;
@@ -485,15 +441,14 @@
     align-items: center;
     height: 28px;
 
+    font-weight: 500;  
+    color: #000000;
     a {
         margin-left: 10px;
     }
 }
 
-////////////////////////////////
-
-.books {}
-
+//////////////////////////////// 
 .books__container {
     padding: 33px 151px 166px 190px;
 }
@@ -552,28 +507,26 @@
     }
 }
 
-.books__item-info {}
-
 .books__item-title {
     margin-bottom: 16px;
-    font-family: Roboto;
-    font-style: normal;
     font-weight: 900;
     font-size: 24px;
     line-height: 28px;
     letter-spacing: 0.04em;
 
     color: #EA1C12;
+    span{
+        color: rgb(61, 61, 61);
+        letter-spacing: 0.04em;
+        font-style: italic;
+    }
 }
 
 .books__item-text {
-    margin-bottom: 30px;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
+    margin-bottom: 30px; 
     font-size: 14px;
     line-height: 20px;
+    color: #875656;
 }
 
 .books__item-link {
@@ -581,8 +534,6 @@
     align-items: center;
 
     a {
-        font-family: Roboto;
-        font-style: normal;
         font-weight: 500;
         font-size: 14px;
         line-height: 16px;
@@ -660,8 +611,6 @@
     margin-bottom: 40px;
     text-align: center;
 
-    font-family: Roboto;
-    font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 28px;
@@ -682,14 +631,8 @@
         padding: 14px 20px;
 
 
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
         font-size: 16px;
         line-height: 22px;
-        /* identical to box height, or 137% */
-
-
         color: #7A7A7A;
     }
 
@@ -720,12 +663,9 @@
 
 
         font-family: Overpass;
-        font-style: normal;
         font-weight: bold;
         font-size: 15px;
         line-height: 23px;
-        /* identical to box height */
-
         color: #FFFFFF;
     }
 }
@@ -745,13 +685,7 @@
     margin-top: 30px;
 
     a {
-        font-family: Roboto;
-        font-style: normal;
         font-weight: bold;
-        font-size: 18px;
-        line-height: 21px;
-        /* identical to box height */
-
         text-align: center;
         letter-spacing: 0.04em;
 
@@ -813,23 +747,15 @@
     align-items: center;
 
     span {
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
         font-size: 14px;
         line-height: 16px;
         text-align: center;
         letter-spacing: 0.04em;
-
-        /* white white */
-
         color: #F2F2F2;
+        padding-left: 20px;
     }
 
     a {
-
-        font-family: Roboto;
-        font-style: normal;
         font-weight: bold;
         font-size: 14px;
         line-height: 16px;
@@ -845,12 +771,15 @@
     width: 100%;
     top: 40%;
     z-index: 2;
+
 }
-.swiper-slide{
-    overflow-x: hidden; 
+
+.swiper-slide {
+    overflow-x: hidden;
 }
+
 .pigination {
-    position: absolute; 
+    position: absolute;
 
     &.white {
         .pigination-button {
@@ -896,11 +825,10 @@
     }
 
     &.pigination-on {
-        &>.pigination-number { 
+        &>.pigination-number {
             overflow: auto;
             width: 28px;
             line-height: 28px;
-            // margin-right: 8px;
             opacity: 1;
             transform: translateZ(0);
             transition-duration: .5s;
