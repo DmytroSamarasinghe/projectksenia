@@ -21,7 +21,7 @@ p {
 
 a {
   display: inline-block;
-  text-decoration: none; 
+  text-decoration: none;
   // color: $text;
 }
 
@@ -32,12 +32,12 @@ li {
   list-style: none;
 }
 
-body { 
+body {
   font-family: $ff;
   font-weight: $fw;
   font-size: $fz;
   line-height: $lh;
-  color: $red; 
+  color: $red;
 }
 
 .wrapper {
@@ -129,12 +129,20 @@ body {
   &::before {
     content: "";
     position: absolute;
-    background-image: url(../images/icons/arrow.svg);
-    width: 6.4px;
-    height: 11.2px;
+    width: 8px;
+    height: 14px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-repeat: no-repeat;
+  }
+
+  &.prev::before {
+    background-image: url(../images/icons/prev.svg);
+  }
+
+  &.next::before {
+    background-image: url(../images/icons/next.svg);
   }
 }
 
@@ -144,7 +152,7 @@ body {
 
 [data-aos="new-animation"].aos-animation {
   overflow: auto;
-} 
+}
 
 .top {
   padding-top: 84px;

@@ -1,11 +1,342 @@
-@media (max-width: 1100px) {
+@media (max-width: 1150px) {
     .container {
         padding: 0 20px;
     }
+
+    /////global-end 
+    .profil__info-inner {
+        padding-left: 0px;
+    }
+
+    .profil__info-inner {
+        .profil__info-item:last-child {
+            .profil__info-text {
+                max-width: 270px;
+            }
+        }
+    }
+
+    /////swiper-end
+    .aboutMe__container {
+        padding-left: 0px;
+    }
+
+    ////aboutMe-end
+    .consultation__container {
+        padding-left: 0;
+    }
+
+    /////consultation-end
+    .freebie__container {
+        padding-left: 0;
+    }
+
+    /////freebie-end
+    .projects__container {
+        padding-left: 0;
+    }
+
+    /////projects-end
+    .books__container {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 820px;
+        margin: 0 auto;
+    }
+
+    /////books-end
+    .contacts__container {
+        padding-left: 0;
+    }
+
+    /////contacts-end
+    .media {
+        .aboutMe__container-inner {
+            margin-left: 20px;
+        }
+    }
+
+    /////media-end
+
 }
 
-@media (max-width: 450px) {
-    .container {
-        padding: 0 20px;
+@media (max-width: 990px) {
+    .aboutMe__container {
+        padding-bottom: 390px;
     }
+
+    .aboutMe__container-M {
+        display: none;
+    }
+
+    .aboutMe__container-inner {
+        .aboutMe__container-item:last-child {
+            display: none;
+        }
+    }
+
+    .aboutMe__container-text {
+        width: 70%;
+    }
+
+    .aboutMe__container-img {
+        width: 30%;
+    }
+
+    .aboutMe__container-paragraf+.aboutMe__container-paragraf {
+        margin-left: 80px;
+    }
+
+    ////aboutMe-end
+    .projects__container-inner .projects__container-item {
+        flex-basis: calc(50% - 30px);
+        max-width: 100%;
+    }
+
+    .projects__item-name {
+        justify-content: center;
+    }
+
+    .projects__item-img {
+        width: 285px;
+        margin: 0 auto;
+
+    }
+
+    ////projects-end
+    .media {
+        .aboutMe__container-paragraf {
+            height: auto;
+        }
+
+        .aboutMe__container-inner {
+            .aboutMe__container-item>img {
+                display: none;
+            }
+        }
+
+        .aboutMe__container-text {
+            width: 50%;
+        }
+
+        .aboutMe__container-img {
+            width: 50%;
+        }
+
+        .aboutMe__container-paragraf+.aboutMe__container-paragraf {
+            width: 600px;
+            top: 290px;
+        }
+    }
+
+    /////media-end
+    .contacts__post-inner {
+        display: block;
+
+    }
+
+    .contacts__post-item {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .contacts__post-item input[name="name"],
+    .contacts__post-item input[name="post"] {
+        width: 100%;
+    }
+
+    .contacts__post-item+.contacts__post-item {
+        margin-left: 0;
+        width: 100%;
+        margin: 20px auto 0;
+    }
+
+    .contacts__post-item button[name="button"] {
+        margin: 0 auto;
+    }
+
+    /////contacts-end
+}
+
+@media (max-width: 850px) {
+
+    .profil__img-woman {
+        display: none;
+    }
+
+    .profil__img-trap {
+        left: 20%;
+    }
+
+    /////profil swiper-end
+    .aboutMe__container-img {
+        display: none;
+    }
+
+    .aboutMe__container-paragraf {
+        height: auto;
+        padding: 20px;
+        padding-bottom: 10px;
+        position: relative;
+    }
+
+    .aboutMe__container-paragraf+.aboutMe__container-paragraf {
+        margin-left: 0;
+        top: 0;
+    }
+
+    .aboutMe__container-info {
+        max-width: 475px;
+        // width: 100%;
+        margin: 0 auto;
+    }
+
+    .aboutMe__container-text {
+        width: auto;
+    }
+
+    ////aboutMe-end 
+    .consultation__container-inner {
+        display: block;
+
+        .consultation__container-item {
+            width: 100%;
+        }
+    }
+
+    .consultation__item-box {
+        width: 262px;
+        margin: 0 auto;
+    }
+
+    .consultation__container-item+.consultation__container-item {
+        margin-top: 40px;
+        // padding-top: 40px;
+    }
+
+    /////consultation-end
+    .books__container {
+        width: auto;
+    }
+
+    .books__container-inner {
+        display: block;
+
+        .books__container-item {
+            margin: 0 auto;
+        }
+
+        .books__container-item+.books__container-item {
+            margin-top: 50px;
+        }
+    }
+
+    /////books-end
+    .media {
+
+        .aboutMe__container-paragraf+.aboutMe__container-paragraf {
+            top: 0;
+            width: auto;
+        }
+
+        .aboutMe__container-text {
+            width: auto;
+        }
+    }
+
+    /////media-end
+}
+
+@media (max-width:680px) {
+    .projects__container-inner {
+        justify-content: center;
+    }
+
+    //////projects-end
+    .contacts__container-inner {
+        display: block;
+    }
+    .contacts__container-item{
+        margin: 0 auto;
+        & +.contacts__container-item{
+            margin-top: 30px;
+        }
+    }
+    .contacts__container-item a{ 
+        margin-left: 0;
+    }
+    //////contacts-end
+}
+
+@media (max-width: 560px) {
+
+    body {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .title {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    /////global-end
+
+    .profil__info-title {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .profil__info-item {
+        padding-right: 20px;
+    }
+
+    /////profil swiper-end
+    .freebie__container-item {
+        flex-direction: column;
+
+        .freebie__item-img {
+            margin-right: 0;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+
+        .freebie__item-info {
+            .freebie__item-title {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .freebie__item-option,
+    .freebie__item-img {
+        margin: 0 auto;
+    }
+
+    /////freebie-end  
+    .contacts__container-post {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /////contacts-end
+}
+
+@media (max-width: 460px) {
+
+    .projects__container-inner .projects__container-item {
+        margin-left: 0;
+    }
+
+    /////projects-end 
+    .img-foot__left::before {
+        left: -20px;
+    }
+
+    .img-foot__right::before {
+        right: -20px;
+    }
+
+    /////books-end 
 }
