@@ -18,7 +18,7 @@
 
     <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
-    <style>  
+    <style>
         .aos-all {
             width: 1000px;
             max-width: 98%;
@@ -54,7 +54,7 @@
         .swiper {
             /* width: 100%; */
             /* height: 100%; */
-        } 
+        }
 
         .swiper-container-v {
             background: #eee;
@@ -63,89 +63,85 @@
 </head>
 
 <body>
-    <div id="console" class="pigination"> 
-        <div class="pigination-button pigination-swiper">
-            <div class="pigination-number">
-                01
+    <!-- <div class="pigination-box">
+        <div class="container">
+            <div class="pigination">
+                <div class="pigination-button pigination-swiper">
+                    <div class="pigination-number">
+                        01
+                    </div>
+                    <span></span>
+                </div>
+                <div class="pigination-button pigination-aboutMe">
+                    <div class="pigination-number">
+                        02
+                    </div>
+                    <span></span>
+                </div>
+                <div class="pigination-button pigination-consultation">
+                    <div class="pigination-number">
+                        03
+                    </div>
+                    <span></span>
+                </div>
+                <div class="pigination-button pigination-freebie pigination-white">
+                    <div class="pigination-number">
+                        04
+                    </div>
+                    <span></span>
+                </div>
+                <div class="pigination-button pigination-projects">
+                    <div class="pigination-number">
+                        05
+                    </div>
+                    <span></span>
+                </div>
+                <div class="pigination-button pigination-books">
+                    <div class="pigination-number">
+                        06
+                    </div>
+                    <span></span>
+                </div>
+                <div class="pigination-button pigination-aboutMe-media">
+                    <div class="pigination-number">
+                        07
+                    </div>
+                    <span></span>
+                </div>
+                <div class="pigination-button pigination-contacts  pigination-white">
+                    <div class="pigination-number">
+                        08
+                    </div>
+                    <span></span>
+                </div>
             </div>
-            <span></span> 
-        </div>  
-        <div class="pigination-button pigination-aboutMe">
-            <div class="pigination-number">
-                02
-            </div>
-            <span></span> 
-        </div> 
-        <div class="pigination-button pigination-consultation">
-            <div class="pigination-number">
-                03
-            </div>
-            <span></span> 
-        </div> 
-        <div class="pigination-button pigination-freebie pigination-white">
-            <div class="pigination-number">
-                04
-            </div>
-            <span></span> 
-        </div> 
-        <div class="pigination-button pigination-projects">
-            <div class="pigination-number">
-                05
-            </div>
-            <span></span> 
-        </div> 
-        <div class="pigination-button pigination-books">
-            <div class="pigination-number">
-                06
-            </div>
-            <span></span> 
-        </div> 
-        <div class="pigination-button pigination-aboutMe-media">
-            <div class="pigination-number">
-                07
-            </div>
-            <span></span> 
-        </div> 
-        <div class="pigination-button pigination-contacts  pigination-white">
-            <div class="pigination-number">
-                08
-            </div>
-            <span></span> 
-        </div> 
-    </div>
-    <header class="header"  >
+        </div>
+    </div> -->
+
+    <header class="header">
         <div class="container">
             <div class="header__box">
                 <div class="logo">
-                    <a href="#">
-                        <img src="images/logo/logo.png" alt="logo">
+                    <a href="#swiper">
+                        <img class="header__logo-on" src="images/logo/logo.png" alt="logo">
+                        <img class="header__logo-off" src="images/logo/logo_2.svg" alt="logo">
                     </a>
                 </div>
                 <div class="menu">
                     <ul class="nav-bar">
-                        <li><a href="#">Обо мне</a></li>
-                        <li><a href="#">Консультации</a></li>
-                        <li><a href="#">Мои проекты</a></li>
-                        <li><a href="#">Книги</a></li>
-                        <li><a href="#">Халява, плиз!</a></li>
-                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#aboutMe">Обо мне</a></li>
+                        <li><a href="#consultation">Консультации</a></li>
+                        <li><a href="#projects">Мои проекты</a></li>
+                        <li><a href="#books">Книги</a></li>
+                        <li><a href="#freebie">Халява, плиз!</a></li>
+                        <li><a href="#contacts">Контакты</a></li> 
                     </ul>
                 </div>
             </div>
         </div>
     </header>
-    <section id="pigination-swiper__start" class="swiper">
-        <!-- Swiper -->
-        <!-- <div class="container"> -->
-
-        <!-- <div class="container">
-            <div class="vertical swiper-pagination swiper-pagination-v"></div>
-        </div> -->
-
-        <!-- <div class=" swiper-container swiper-container-v"> -->
-        <!-- <div class=" swiper-wrapper"> -->
-        <!-- Vertical Slide 1 -->
-        <!-- <div class="swiper-slide"> -->
+    <section id="swiper" class="swiper top">
+        <!-- Swiper --> 
         <div class="swiper-container swiper-container-h">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -276,27 +272,11 @@
             <!-- Add Pagination -->
             <div class="swiper-button-next swiper-pagination-h"></div>
             <div class="swiper-button-prev swiper-pagination-h"></div>
-        </div>
-        <!-- </div> -->
-        <!-- Vertical Slide 2 -->
-        <!-- <div class="swiper-slide"> -->
-        <!-- f -->
-        <!-- </div> -->
-        <!-- Vertical Slide 3 -->
-        <!-- <div class="swiper-slide"> -->
-        <!-- d -->
-        <!-- </div> -->
-        <!-- Vertical Slide 4 -->
-        <!-- <div class="swiper-slide"> -->
-        <!-- d -->
-        <!-- </div> -->
-        <!-- </div> -->
-        <!-- Add Pagination -->
-        <!-- </div> -->
+        </div> 
     </section>
 
-    <section id="pigination-swiper__end"  class="aboutMe" >
-        <div id="pigination-aboutMe__start" class="container" >
+    <section id="aboutMe" class="aboutMe top">
+        <div class="container">
             <div class="aboutMe__container">
                 <div class="aboutMe__container-title title">
                     обо мне
@@ -345,8 +325,8 @@
         </div>
     </section>
 
-    <section id="pigination-aboutMe__end" class="consultation" >
-        <div id="pigination-consultation__start" class="container">
+    <section id="consultation" class="consultation top">
+        <div class="container">
             <div class="consultation__container">
                 <div class="consultation__container-title title">
                     Индивидуальные консультации
@@ -389,8 +369,8 @@
             </div>
         </div>
     </section>
-    <section id="pigination-consultation__end" class="freebie">
-        <div id="pigination-freebie__start" class="container">
+    <section id="freebie" class="freebie top">
+        <div class="container">
             <div class="freebie__container">
                 <div class="freebie__container-title title">
                     Халява, плиз!
@@ -454,8 +434,8 @@
             </div>
         </div>
     </section>
-    <section id="pigination-freebie__end" class="projects">
-        <div id="pigination-projects__start" class="container">
+    <section id="projects" class="projects top">
+        <div class="container">
             <div class="projects__container">
                 <div class="projects__container-title title">
                     Мои проекты
@@ -549,8 +529,8 @@
             </div>
         </div>
     </section>
-    <section id="pigination-projects__end" class="books">
-        <div id="pigination-books__start" class="container">
+    <section id="books" class="books top">
+        <div class="container">
             <div class="books__container">
                 <div class="books__container-title title">
                     Книги
@@ -604,8 +584,8 @@
     </section>
 
 
-    <section id="pigination-books__end" class="aboutMe media">
-        <div id="pigination-aboutMe-media__start" class="container">
+    <section id="media" class="aboutMe media top">
+        <div class="container">
             <div class="aboutMe__container">
                 <div class="aboutMe__container-title title">
                     обо мне
@@ -655,8 +635,8 @@
             </div>
         </div>
     </section>
-    <section id="pigination-aboutMe-media__end" class="contacts">
-        <div id="pigination-contacts__start" class="container">
+    <section id="contacts" class="contacts top">
+        <div class="container">
             <div class="contacts__container">
                 <div class="contacts__container-title title">
                     Контакты
@@ -694,7 +674,7 @@
             </div>
         </div>
     </section>
-    <footer id="pigination-contacts__end" class="footer">
+    <footer class="footer">
         <div class="container">
             <div class="footer__container">
                 <div class="footer__container-info">
@@ -713,7 +693,10 @@
                 </div>
             </div>
         </div>
-    </footer><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
     <script src="js/main.js"></script>
     <!-- Swiper JS -->
@@ -723,12 +706,13 @@
     <!-- Initialize Swiper -->
     <script>
         var swiperH = new Swiper('.swiper-container-h', {
-            // direction: 'horizontal',
+            direction: 'horizontal',
             // spaceBetween: 50,
-            // pagination: {
-            //     el: '.swiper-pagination-h',
-            //     clickable: true,
-            // },
+            slidesPerView: 1,
+                // pagination: {
+                //     el: '.swiper-pagination-h',
+                //     clickable: true,
+                // },
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
@@ -736,18 +720,18 @@
             speed: 1000,
             controller: false,
         });
-        var swiperV = new Swiper('.swiper-container-v', {
-            direction: 'vertical',
-            spaceBetween: 50,
-            pagination: {
-                el: '.swiper-pagination-v',
-                clickable: true,
-            },
-            mousewheel: true,
-            // hashNavigation: {
-            //     replaceState: true,
-            // },
-        });
+        // var swiperV = new Swiper('.swiper-container-v', {
+        //     direction: 'vertical',
+        //     spaceBetween: 50,
+        //     pagination: {
+        //         el: '.swiper-pagination-v',
+        //         clickable: true,
+        //     },
+        //     mousewheel: true,
+        //     // hashNavigation: {
+        //     //     replaceState: true,
+        //     // },
+        // });
     </script>
 </body>
 

@@ -5,9 +5,34 @@
 .header {
     // padding-bottom: 500px;
     // display: none;
-    &.g{
-        background-color: red;
-        position: fixed;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    z-index: 2;
+
+    &.g {
+        // background-color: transparent;   
+        background: #E51A4B;
+
+        .header__logo-on {
+            display: none;
+        }
+
+        .header__logo-off {
+            display: block;
+        }
+
+        a {
+            color: #ffffff;
+        }
+    }
+
+    .header__logo-on {
+        display: block;
+    }
+
+    .header__logo-off {
+        display: none;
     }
 }
 
@@ -37,6 +62,10 @@
 }
 
 ///////////////////
+.swiper{
+    overflow-x: auto; 
+}
+/////////
 .profil {
     position: relative;
     min-height: 816px;
@@ -811,40 +840,32 @@
 }
 
 /////////////////////////*/*/*/*/**/*/*/*//////
-.pigination {
+.pigination-box {
     position: fixed;
-    width: 30px;
-    height: 100px;
-    top: 50%;
-    left: 10%;
-    transform: (-50%, -50%);
+    width: 100%;
+    top: 40%;
+    z-index: 2;
+}
+.swiper-slide{
+    overflow-x: hidden; 
+}
+.pigination {
+    position: absolute; 
 
     &.white {
-        background-color: #000;
+        .pigination-button {
+            span {
+                background-color: #fff;
+            }
+        }
     }
 }
 
-.pigination>.pigination-on.pigination-white {
-    background-color: #992B2B;
-}
-
 .pigination-number {
-    // &.pigination-off {
     overflow: hidden;
     width: 0;
     opacity: 0;
     transition-property: opacity, transform;
-    // }
-
-    // &.pigination-on {
-    //     overflow: auto;
-    //     width: 20px;
-    //     margin-right: 8px;
-    //     opacity: 1;
-    //     transform: translateZ(0);
-    //     transition-duration: .5s;
-    //     transition-timing-function: ease;
-    // }
 }
 
 .pigination-box.aos-init {
@@ -866,7 +887,7 @@
     span {
         display: block;
         background-color: #E51A4B;
-        height: 2px;
+        height: 4px;
         width: 50px;
 
         .aos-init.aos-animate {
@@ -874,21 +895,16 @@
         }
     }
 
-    // &.pigination-white{
-    //    color: #e90f0f;
-    //     span {
-    //         background-color: #eb2020; 
-    //     }
-    // }
     &.pigination-on {
-        &>.pigination-number {
+        &>.pigination-number { 
             overflow: auto;
-            width: 20px;
-            margin-right: 8px;
+            width: 28px;
+            line-height: 28px;
+            // margin-right: 8px;
             opacity: 1;
             transform: translateZ(0);
             transition-duration: .5s;
-            transition-timing-function: ease;
+            // transition-timing-function: ease;
             color: #E51A4B;
         }
 
@@ -903,10 +919,6 @@
         }
 
     }
-}
-
-[data-aos-anchor=".headerA"] {
-    background-color: #E5194A;
 }
 
 /////////////////////6

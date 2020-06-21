@@ -121,13 +121,13 @@ body {
   outline-width: 0px;
 }
 
-.btn-white { 
-    width: 28px;
-    height: 28px;
-    background: #F0F0F0;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    position: relative;
-    border-radius: 50%; 
+.btn-white {
+  width: 28px;
+  height: 28px;
+  background: #F0F0F0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+  border-radius: 50%;
 
   &::before {
     content: "";
@@ -139,16 +139,16 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
   }
+}
+
+[data-aos="new-animation"] {
+  overflow: hidden;
+}
+
+[data-aos="new-animation"].aos-animation {
+  overflow: auto;
 } 
-[data-aos="new-animation"]{
-overflow: hidden;    
-}
-[data-aos="new-animation"].aos-animation{
-overflow: auto;   
-}
-[data-aos="new-1"]{ 
-  
-}
-[data-aos="new-1"].aos-animation{ 
- 
+
+.top {
+  padding-top: 84px;
 }
