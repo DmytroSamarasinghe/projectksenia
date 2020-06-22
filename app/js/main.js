@@ -1,6 +1,5 @@
 
-AOS.init({
-});
+new WOW().init();
 function pigination(start, el) {
     $(document).ready(function () {
         $(window).resize(function () {
@@ -31,18 +30,36 @@ function pigination(start, el) {
     })
 }
 
-// pigination('.swiper', '.pigination-swiper');
-// pigination('.aboutMe', '.pigination-aboutMe');
-// pigination('.consultation', '.pigination-consultation');
-// pigination('.freebie', '.pigination-freebie');
-// pigination('.projects', '.pigination-projects');
-// pigination('.books', '.pigination-books');
-// pigination('.media', '.pigination-aboutMe-media');
-// pigination('.contacts', '.pigination-contacts');
+pigination('.swiper', '.pigination-swiper');
+pigination('.aboutMe', '.pigination-aboutMe');
+pigination('.consultation', '.pigination-consultation');
+pigination('.freebie', '.pigination-freebie');
+pigination('.projects', '.pigination-projects');
+pigination('.books', '.pigination-books');
+pigination('.media', '.pigination-aboutMe-media');
+pigination('.contacts', '.pigination-contacts');
 
-$("body").on('click', '[href*="#"]', function (e) {
-    var fixed_offset = 0;
-    $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1500);
-    e.preventDefault();
+$(".header__box").on('click', '[href*="#"]', function (e) {
+    if (window.innerWidth > 850) {
+        let header = 0;
+        var fixed_offset = header;
+        $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1500);
+        e.preventDefault();
+    } else {
+        let cbox = document.getElementById('one');
+        let header = $('.header').height();
+        var fixed_offset = header;
+        $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1500);
+        e.preventDefault();
+        cbox.checked = false;
+    }
 });
-   
+ 
+
+// $(window).scroll(function () {
+//     scrollTracking();
+// });
+
+// $(document).ready(function () {
+//     scrollTracking();
+// });

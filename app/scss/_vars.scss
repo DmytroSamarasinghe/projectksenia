@@ -1,9 +1,43 @@
+ $white: #efefef;
+ $red:#E51A4B;
+ //body-s
+ $ff: "Roboto",
+ sans-serif; //regular 
+ $fw:400;
+ $fz:18px;
+ $lh:21px;
+ //body-end 
  
-$white: #efefef; 
-$red:#E51A4B;
-//body-s
-$ff: "Roboto", sans-serif; //regular 
-$fw:400;
-$fz:18px;
-$lh:21px; 
-//body-end
+
+ @keyframes increaseBounce {
+     0% {
+         font-size: 36px;
+         line-height: 45px;
+     }
+
+     50%,100% {
+
+         font-size: 46px;
+         line-height: 52px;
+     }
+
+
+     50%,
+     70%,
+     90%,
+     100% {
+         -webkit-transform: translateY(0);
+         transform: translateY(0);
+     }
+
+     60% {
+         -webkit-transform: translateY(-20px);
+         transform: translateY(-20px);
+     }
+
+     80% {
+         -webkit-transform: translateY(-10px);
+         transform: translateY(-10px);
+     }
+
+ }

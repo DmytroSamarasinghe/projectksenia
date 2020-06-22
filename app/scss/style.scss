@@ -6,7 +6,7 @@
     position: fixed;
     width: 100%;
     background-color: #fff;
-    z-index: 2;
+    z-index: 2; 
 
     &.g {
         background: #E51A4B;
@@ -260,7 +260,7 @@
 ///////////////// 
 
 .consultation__container {
-    padding: 33px 0 66px 159px;
+    padding: 33px 0 120px 159px;
 }
 
 .consultation__container-title {
@@ -400,21 +400,36 @@
     padding: 17px 20px;
 }
 
-.btn-download {
+.btn-download,
+.btn-vidio {
     width: 34px;
     height: 34px;
     border-radius: 50%;
     position: relative;
+    background: #E5194A;
 
     &:before {
         content: "";
-        background-image: url(../images/freebie/doenload.svg);
         position: absolute;
-        width: 15px;
-        height: 15px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+}
+
+.btn-download {
+    &:before {
+        background-image: url(../images/freebie/doenload.svg);
+        width: 15px;
+        height: 15px;
+    }
+}
+
+.btn-vidio {
+    &:before {
+        background-image: url(../images/freebie/video.svg);
+        width: 19.5px;
+        height: 19.5px;
     }
 }
 
@@ -442,7 +457,7 @@
         flex-basis: calc(33.333% - 30px);
     }
 }
- 
+
 
 .projects__item-img {
     height: 236px;
@@ -501,6 +516,11 @@
 
 .books__container-title {
     margin-bottom: 40px;
+    transition: all .5s;
+
+    &:hover {
+        animation: increaseBounce 3s;
+    }
 }
 
 .books__container-inner {
@@ -897,4 +917,79 @@
 }
 
 /////////////////////6
+
+
+.mobile {
+    display: none;
+}
+
+nav {
+    list-style-type: none;
+}
+
+.main nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 350px;
+}
+
+.main a {
+    font-family: "Roboto", Sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+    color: #fff;
+    margin: 5px 0px 0px 25px;
+}
+
+.main a.active {
+    color: red;
+}
+
+.main a:hover {
+    color: red;
+}
+
+////////////////////////////
+.details {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.details__container {}
+
+.details__container-img {
+   width: 200px; 
+    margin: 0 auto 20px auto;
+
+}
+
+.details__container-info {}
+
+.details__info-title {
+    margin-bottom: 20px;
+}
+
+.details__info-text {
+    padding: 20px;
+
+    p+p {
+        margin-top: 20px;
+    }
+}
+
+.details__info-btn {
+    text-transform: uppercase;
+    padding-left: 20px;
+
+    a {
+        margin-left: 20px;
+    }
+}
+
+.details__info-download {}
+
+///////////////////////
 @import "media";
