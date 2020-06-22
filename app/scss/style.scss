@@ -516,15 +516,7 @@
 }
 
 .books__container-title {
-    margin-bottom: 40px;
-
-    span {
-        transition: all .5s;
-
-        &:hover {
-            animation: increaseBounce 3s;
-        }
-    }
+    margin-bottom: 40px;    
 }
 
 .books__container-inner {
@@ -583,6 +575,7 @@
     font-size: 24px;
     line-height: 28px;
     letter-spacing: 0.04em;
+    transition: all .5s;
 
     color: #EA1C12;
 
@@ -590,6 +583,11 @@
         color: rgb(61, 61, 61);
         letter-spacing: 0.04em;
         font-style: italic;
+    } 
+
+    &:hover {
+        cursor: pointer;
+        animation: increaseBounce 3s;
     }
 }
 
