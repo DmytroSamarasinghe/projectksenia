@@ -6,7 +6,7 @@
     position: fixed;
     width: 100%;
     background-color: #fff;
-    z-index: 2; 
+    z-index: 2;
 
     &.g {
         background: #E51A4B;
@@ -153,6 +153,7 @@
     line-height: 56px;
     text-transform: uppercase;
     padding-bottom: 10px;
+    font-weight: 400;
 }
 
 .profil__info-text {
@@ -516,10 +517,13 @@
 
 .books__container-title {
     margin-bottom: 40px;
-    transition: all .5s;
 
-    &:hover {
-        animation: increaseBounce 3s;
+    span {
+        transition: all .5s;
+
+        &:hover {
+            animation: increaseBounce 3s;
+        }
     }
 }
 
@@ -961,7 +965,7 @@ nav {
 .details__container {}
 
 .details__container-img {
-   width: 200px; 
+    width: 200px;
     margin: 0 auto 20px auto;
 
 }
