@@ -48,27 +48,10 @@ pigination('.books', '.pigination-books');
 pigination('.media', '.pigination-aboutMe-media');
 pigination('.contacts', '.pigination-contacts');
 
-$(".header__box").on('click', '[href*="#"]', function (e) {
-    if (window.innerWidth > 850) {
-        let header = 0;
-        var fixed_offset = header;
-        $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1500);
-        e.preventDefault();
-    } else {
+$(".header__box").on('click', '[href*="#"]', function (e) { 
         let cbox = document.getElementById('one');
-        let header = $('.header').height();
-        var fixed_offset = header;
+        var fixed_offset = 0;
         $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1500);
         e.preventDefault();
-        cbox.checked = false;
-    }
-});
-
-
-// $(window).scroll(function () {
-//     scrollTracking();
-// });
-
-// $(document).ready(function () {
-//     scrollTracking();
-// });
+        cbox.checked = false; 
+}); 
