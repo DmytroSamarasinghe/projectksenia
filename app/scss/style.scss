@@ -9,7 +9,7 @@
     z-index: 2;
 
     &.g {
-        background: #E51A4B;
+        background:  $red;
 
         .header__logo-on {
             display: none;
@@ -207,7 +207,7 @@
     width: 100%;
     height: 260px;
     padding: 30px;
-    background: #E51A4B;
+    background:  $red;
     box-shadow: -3px 3px 10px rgba(81, 21, 35, 0.12);
 
     p {
@@ -316,7 +316,7 @@
     width: 100%;
 
     span {
-        background: #E51A4B;
+        background:  $red;
         padding: 5px 10px;
         font-weight: 500;
         font-size: 24px;
@@ -608,7 +608,7 @@
         line-height: 16px;
         letter-spacing: 0.04em;
         text-transform: uppercase;
-        color: #E51A4B;
+        color:  $red;
         margin-right: 10px;
     }
 
@@ -616,7 +616,7 @@
         display: block;
         width: 100%;
         height: 1px;
-        background: #E51A4B;
+        background:  $red;
     }
 
 }
@@ -657,7 +657,7 @@
 
 //////////////
 .contacts {
-    background: #E51A4B;
+    background:  $red;
 }
 
 .contacts__container {
@@ -727,7 +727,7 @@
     button[name="button"] {
         width: 135px;
         height: 50px;
-        background: #E51A4B;
+        background:  $red;
         box-shadow: 0px 4px 10px rgba(175, 7, 47, 0.3);
 
 
@@ -802,7 +802,7 @@
 
 //////////////////
 .footer {
-    background: #E51A4B;
+    background:  $red;
     border-top: 1px solid #F0406B;
 }
 
@@ -884,7 +884,7 @@
 
     span {
         display: block;
-        background-color: #E51A4B;
+        background-color:  $red;
         height: 4px;
         width: 50px;
 
@@ -902,7 +902,7 @@
             transform: translateZ(0);
             transition-duration: .5s;
             // transition-timing-function: ease;
-            color: #E51A4B;
+            color:  $red;
         }
 
         &.pigination-white {
@@ -958,17 +958,13 @@ nav {
 .details {
     padding-top: 100px;
     padding-bottom: 100px;
-}
-
-.details__container {}
+} 
 
 .details__container-img {
     width: 200px;
     margin: 0 auto 20px auto;
 
-}
-
-.details__container-info {}
+} 
 
 .details__info-title {
     margin-bottom: 20px;
@@ -989,9 +985,78 @@ nav {
     a {
         margin-left: 20px;
     }
-}
-
-.details__info-download {}
+} 
 
 ///////////////////////
+
+.preloader {
+    /*фиксированное позиционирование*/
+    position: fixed;
+    /* координаты положения */
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    /* фоновый цвет элемента */
+    background: #e0e0e0;
+    /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+    z-index: 1001;
+  }
+
+  .preloader__row {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    margin-top: -35px;
+    margin-left: -35px;
+    text-align: center;
+    animation: preloader-rotate 2s infinite linear;
+  }
+
+  .preloader__item {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    background-color:  $red;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    animation: preloader-bounce 2s infinite ease-in-out;
+  }
+
+  .preloader__item:last-child {
+    top: auto;
+    bottom: 0;
+    animation-delay: -1s;
+  }
+
+  @keyframes preloader-rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes preloader-bounce {
+
+    0%,
+    100% {
+      transform: scale(0);
+    }
+
+    50% {
+      transform: scale(1);
+    }
+  }
+
+  .loaded_hiding .preloader {
+    transition: 0.3s opacity;
+    opacity: 0;
+  }
+
+  .loaded .preloader {
+    display: none;
+  }
+///////////////////
 @import "media";

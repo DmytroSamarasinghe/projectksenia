@@ -1,4 +1,13 @@
-
+function preloader() {
+    $(window).on('load', function () {
+        $('.preloader').fadeOut().end().delay(400).fadeOut('slow');
+    });
+    window.setTimeout(function () {
+        var preloaderbox = document.querySelector('.preloader');
+        preloaderbox.style.display = 'none';
+    }, 500); 
+}
+// preloader();
 new WOW().init();
 function pigination(start, el) {
     $(document).ready(function () {
@@ -54,7 +63,7 @@ $(".header__box").on('click', '[href*="#"]', function (e) {
         cbox.checked = false;
     }
 });
- 
+
 
 // $(window).scroll(function () {
 //     scrollTracking();
