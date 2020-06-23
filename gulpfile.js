@@ -21,8 +21,8 @@ gulp.task('sass', function () {
 gulp.task('style', function(){
     return gulp.src([
         'node_modules/normalize.css/normalize.css', 
-        // 'node_modules/jquery-form-styler/dist/jquery.formstyler.css', 
-        // 'node_modules/slick-carousel/slick/slick.css',
+        'node_modules/swiper/css/swiper.css',  
+        'node_modules/wowjs/css/libs/animate.css', 
     ])
     .pipe(concat('libs.min.css'))
     .pipe(cssmin())
@@ -31,8 +31,10 @@ gulp.task('style', function(){
 
 gulp.task('script', function(){
     return gulp.src([
-        // 'node_modules/jquery-form-styler/dist/jquery.formstyler.js', 
-        // 'node_modules/slick-carousel/slick/slick.js',
+        'node_modules/vue/dist/vue.js',   
+        'node_modules/swiper/js/swiper.js', 
+        'node_modules/wowjs/dist/wow.min.js',  
+
     ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
@@ -64,4 +66,4 @@ gulp.task('watch', function () {
     gulp.watch('app/js/*.js', gulp.parallel('js'));
 });
 
-gulp.task('default', gulp.parallel('style',  'sass', 'watch', 'browser-sync'))   //'script',
+gulp.task('default', gulp.parallel('style', 'script', 'sass', 'watch', 'browser-sync'))   //'script',
