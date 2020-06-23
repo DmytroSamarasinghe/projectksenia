@@ -4,9 +4,10 @@
     }
 
     /////global-end 
-    .swiper{
+    .swiper {
         padding-top: 84px;
-    } 
+    }
+
     .profil__info-inner {
         padding-left: 0px;
     }
@@ -22,7 +23,7 @@
     /////swiper-end 
     .aboutMe__container {
         padding-left: 0px;
-        padding-bottom: 200px; 
+        padding-bottom: 200px;
     }
 
     ////aboutMe-end
@@ -43,7 +44,7 @@
 
     /////projects-end
     .books__container {
-        padding: 0 20px; 
+        padding: 0 20px;
         width: 820px;
         margin: 0 auto;
     }
@@ -168,13 +169,10 @@
 
 @media (max-width: 850px) {
 
-    // .top {
-        // padding-top: 0px;
-    // }
     ///global-end
     .header {
         &.g {
-            #menuToggle span{
+            #menuToggle span {
                 background: #fff;
             }
         }
@@ -192,13 +190,17 @@
     }
 
     /////profil swiper-end
+    .aboutMe__container {
+        padding-bottom: 0;
+    }
+
     .aboutMe__container-img {
         display: none;
     }
 
     .aboutMe__container-paragraf {
         height: auto;
-        padding: 20px; 
+        padding: 20px;
         position: relative;
     }
 
@@ -232,7 +234,7 @@
     }
 
     .consultation__container-item+.consultation__container-item {
-        margin-top: 50px; 
+        margin-top: 50px;
     }
 
     /////consultation-end
@@ -257,6 +259,7 @@
         .aboutMe__container {
             padding-bottom: 151px;
         }
+
         .aboutMe__container-paragraf+.aboutMe__container-paragraf {
             top: 0;
             width: auto;
@@ -484,7 +487,7 @@
 }
 
 @media (max-width: 360px) {
-    .books__item-img::before{
+    .books__item-img::before {
         content: none;
     }
 }
