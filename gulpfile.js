@@ -21,7 +21,7 @@ gulp.task('sass', function () {
 gulp.task('style', function(){
     return gulp.src([
         'node_modules/normalize.css/normalize.css', 
-        'node_modules/swiper/css/swiper.css',  
+        'node_modules/swiper/css/swiper.min.css',  
         'node_modules/wowjs/css/libs/animate.css', 
     ])
     .pipe(concat('libs.min.css'))
@@ -31,7 +31,7 @@ gulp.task('style', function(){
 
 gulp.task('script', function(){
     return gulp.src([
-        'node_modules/vue/dist/vue.js',   
+        // 'node_modules/vue/dist/vue.js',   
         'node_modules/swiper/js/swiper.js', 
         'node_modules/wowjs/dist/wow.min.js',  
 
