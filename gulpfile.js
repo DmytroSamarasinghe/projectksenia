@@ -31,7 +31,7 @@ gulp.task('style', function(){
 
 gulp.task('script', function(){
     return gulp.src([
-        'node_modules/vue/dist/vue.js',   
+        //'node_modules/vue/dist/vue.js',   
         'node_modules/swiper/js/swiper.js', 
         'node_modules/wowjs/dist/wow.min.js',  
 
