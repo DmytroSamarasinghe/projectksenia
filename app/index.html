@@ -5,18 +5,734 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Еда</title>
-    <link rel="shortcut icon" href="images/DS.png" type="image/png">
+    <title>Ksenia</title> 
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-    
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- <div class="preloader">
+        <div class="preloader__row">
+            <div class="preloader__item"></div>
+            <div class="preloader__item"></div>
+        </div>
+    </div> -->
+    <div class="wrapper">
+        <div class="content">
+            <div class="pigination-box">
+                <div class="container">
+                    <div class="pigination">
+                        <div class="pigination-button pigination-swiper pigination-on">
+                            <div class="pigination-number">
+                                01
+                            </div>
+                            <span></span>
+                        </div>
+                        <div class="pigination-button pigination-aboutMe">
+                            <div class="pigination-number">
+                                02
+                            </div>
+                            <span></span>
+                        </div>
+                        <div class="pigination-button pigination-consultation">
+                            <div class="pigination-number">
+                                03
+                            </div>
+                            <span></span>
+                        </div>
+                        <div class="pigination-button pigination-freebie pigination-white">
+                            <div class="pigination-number">
+                                04
+                            </div>
+                            <span></span>
+                        </div>
+                        <div class="pigination-button pigination-projects">
+                            <div class="pigination-number">
+                                05
+                            </div>
+                            <span></span>
+                        </div>
+                        <div class="pigination-button pigination-books">
+                            <div class="pigination-number">
+                                06
+                            </div>
+                            <span></span>
+                        </div>
+                        <div class="pigination-button pigination-aboutMe-media">
+                            <div class="pigination-number">
+                                07
+                            </div>
+                            <span></span>
+                        </div>
+                        <div class="pigination-button pigination-contacts  pigination-white">
+                            <div class="pigination-number">
+                                08
+                            </div>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <header class="header">
+                <div class="container">
+                    <div class="header__box">
+                        <div class="logo">
+                            <a href="#swiper">
+                                <img class="header__logo-on" src="images/logo/logo.png" alt="logo">
+                                <img class="header__logo-off" src="images/logo/logo_2.svg" alt="logo">
+                            </a>
+                        </div>
+                        <div class="menu">
+                            <ul class="nav-bar">
+                                <li><a href="#aboutMe">Обо мне</a></li>
+                                <li><a href="#consultation">Консультации</a></li>
+                                <li><a href="#projects">Мои проекты</a></li>
+                                <li><a href="#books">Книги</a></li>
+                                <li><a href="#freebie">Халява, плиз!</a></li>
+                                <li><a href="#contacts">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="mobile">
+                            <nav role="navigation">
+                                <div id="menuToggle">
+                                    <input id="one" type="checkbox">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <ul id="menu-tel">
+                                        <li><a href="#aboutMe">Обо мне</a></li>
+                                        <li><a href="#consultation">Консультации</a></li>
+                                        <li><a href="#projects">Мои проекты</a></li>
+                                        <li><a href="#books">Книги</a></li>
+                                        <li><a href="#freebie">Халява, плиз!</a></li>
+                                        <li><a href="#contacts">Контакты</a></li>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <section id="swiper" class="swiper top">
+                <!-- Swiper -->
+                <div class="swiper-container swiper-container-h">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="profil__img">
+                                <img class="profil__img-trap" src="images/purpurFon.png" alt="">
+                                <div class="profil__img-woman"></div>
+                            </div>
+                            <div class="container">
+                                <div class="profil__info">
+                                    <div class="profil__info-inner">
+                                        <div class="profil__info-item">
+                                            <h1 class="profil__info-title">
+                                                Бизнесвумен
+                                            </h1>
+                                            <div class="profil__info-text">
+                                                Основала агентство контент-маркетинга Malkki Media, организатор
+                                                мероприятий.
+                                            </div>
+                                        </div>
+                                        <div class="profil__info-item">
+                                            <h1 class="profil__info-title">
+                                                писатель
+                                            </h1>
+                                            <div class="profil__info-text">
+                                                Автор книг о жизни и воспитании детей в Финляндии
+                                            </div>
+                                        </div>
+                                        <div class="profil__info-item">
+                                            <h1 class="profil__info-title">
+                                                блогер
+                                            </h1>
+                                            <div class="profil__info-text">
+                                                В Instagram блог о бизнесе и текстах
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="profil__info-socia">
+                                        <a href=javascript:void(0) class="profil__info-instagram"></a>
+                                        <a href="javascript:void(0)" class="profil__info-facebook"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="profil__img">
+                                <img class="profil__img-trap" src="images/purpurFon.png" alt="">
+                                <div class="profil__img-woman"></div>
+                            </div>
+                            <div class="container">
+                                <div class="profil__info">
+                                    <div class="profil__info-inner">
+                                        <div class="profil__info-item">
+                                            <h1 class="profil__info-title">
+                                                Бизнесвумен
+                                            </h1>
+                                            <div class="profil__info-text">
+                                                Основала агентство контент-маркетинга Malkki Media, организатор
+                                                мероприятий.
+                                            </div>
+                                        </div>
+                                        <div class="profil__info-item">
+                                            <h1 class="profil__info-title">
+                                                писатель
+                                            </h1>
+                                            <div class="profil__info-text">
+                                                Автор книг о жизни и воспитании детей в Финляндии
+                                            </div>
+                                        </div>
+                                        <div class="profil__info-item">
+                                            <h1 class="profil__info-title">
+                                                блогер
+                                            </h1>
+                                            <div class="profil__info-text">
+                                                В Instagram блог о бизнесе и текстах
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="profil__info-socia">
+                                        <a href="javascript:void(0)" class="profil__info-instagram"></a>
+                                        <a href="javascript:void(0)" class="profil__info-facebook"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="profil__img">
+                                <img class="profil__img-trap" src="images/purpurFon.png" alt="">
+                                <div class="profil__img-woman"></div>
+                            </div>
+                            <div class="container">
+                                <div class="profil__info">
+                                    <div class="profil__info-inner">
+                                        <div class="profil__info-item">
+                                            <h1 class="profil__info-title">
+                                                Бизнесвумен
+                                            </h1>
+                                            <div class="profil__info-text">
+                                                Основала агентство контент-маркетинга Malkki Media, организатор
+                                                мероприятий.
+                                            </div>
+                                        </div>
+                                        <div class="profil__info-item">
+                                            <h1 class="profil__info-title">
+                                                писатель
+                                            </h1>
+                                            <div class="profil__info-text">
+                                                Автор книг о жизни и воспитании детей в Финляндии
+                                            </div>
+                                        </div>
+                                        <div class="profil__info-item">
+                                            <h1 class="profil__info-title">
+                                                блогер
+                                            </h1>
+                                            <div class="profil__info-text">
+                                                В Instagram блог о бизнесе и текстах
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="profil__info-socia">
+                                        <a href="javascript:void(0)" class="profil__info-instagram"></a>
+                                        <a href="javascript:void(0)" class="profil__info-facebook"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-button">
+                        <div class="container">
+                            <div class="swiper-box">
+                                <div class="swiper-button-prev btn-white prev"></div>
+                                <div class="swiper-button-next btn-white next"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="aboutMe" class="aboutMe top">
+                <div class="container">
+                    <div class="aboutMe__container">
+                        <h1 class="aboutMe__container-title title">
+                            обо мне
+                        </h1>
+                        <div class="aboutMe__container-info">
+                            <div class="aboutMe__container-text">
+                                <div class="aboutMe__container-paragraf">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut
+                                        labore et dolore magna aliqua.
+                                    </p>
+                                    <p>
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                        aliquip ex ea
+                                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                                        esse cillum
+                                        dolore eu fugiat nulla pariatur.
+                                    </p>
+                                </div>
+                                <div class="aboutMe__container-paragraf">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut
+                                        labore et dolore magna aliqua.
+                                    </p>
+                                    <p>
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                        aliquip ex ea
+                                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                                        esse cillum
+                                        dolore eu fugiat nulla pariatur.
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="aboutMe__container-M">
+                                <img src="images/aboutMe/M.svg" alt="">
+                            </div>
+                            <div class="aboutMe__container-img">
+                                <div class="aboutMe__container-inner">
+                                    <div class="aboutMe__container-item"><img src="images/aboutMe/aboutMe1.jpg" alt="">
+                                    </div>
+                                    <div class="aboutMe__container-item"><img src="images/aboutMe/aboutMe2.jpg" alt="">
+                                    </div>
+                                    <div class="aboutMe__container-item"><img src="images/aboutMe/aboutMe3.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="consultation" class="consultation top">
+                <div class="container">
+                    <div class="consultation__container">
+                        <h1 class="consultation__container-title title">
+                            Индивидуальные консультации
+                        </h1>
+                        <div class="consultation__container-inner">
+                            <div class="consultation__container-item">
+                                <div class="consultation__item-box">
+                                    <img src="images/consultation/consultation1.svg" alt="">
+                                    <a href="javascript:void(0)" class="consultation__item-shadov">
+                                        <span>Подробнее</span>
+                                    </a>
+                                </div>
+                                <div class="consultation__container-name">
+                                    <span>Контент-мейкер</span>
+                                </div>
+                            </div>
+                            <div class="consultation__container-item">
+                                <div class="consultation__item-box">
+                                    <img src="images/consultation/consultation2.svg" alt="">
+                                    <a href="javascript:void(0)" class="consultation__item-shadov">
+                                        <span>Подробнее</span>
+                                    </a>
+                                </div>
+                                <div class="consultation__container-name">
+                                    <span>Ивентщик</span>
+                                </div>
+                            </div>
+                            <div class="consultation__container-item">
+                                <div class="consultation__item-box">
+                                    <img src="images/consultation/consultation3.svg" alt="">
+                                    <a href="javascript:void(0)" class="consultation__item-shadov">
+                                        <span>Подробнее</span>
+                                    </a>
+                                </div>
+                                <div class="consultation__container-name">
+                                    <span>Аффтор жжот</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="freebie" class="freebie top">
+                <div class="container">
+                    <div class="freebie__container">
+                        <h1 class="freebie__container-title title">
+                            Халява, плиз!
+                        </h1>
+                        <div class="freebie__container-inner">
+                            <div class="freebie__container-item">
+                                <div class="freebie__item-img">
+                                    <img src="images/freebie/freebie1.jpg" alt="">
+                                </div>
+                                <div class="freebie__item-info">
+                                    <div class="freebie__item-title">
+                                        Гайд по заработку на текстах
+                                    </div>
+                                    <div class="freebie__item-option">
+                                        <a href="details.html" class="freebie__item-btn btn-link">
+                                            Подробнее
+                                        </a>
+                                        <a href="download/demo.pdf" class="freebie__item-btn btn-download" download></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="freebie__container-item">
+                                <div class="freebie__item-img">
+                                    <img src="images/freebie/freebie2.jpg" alt="">
+                                </div>
+                                <div class="freebie__item-info">
+                                    <div class="freebie__item-title">
+                                        Бесплатный вебинар по event-маркетингу
+                                    </div>
+                                    <div class="freebie__item-option">
+                                        <a href="javascript:void(0)" class="freebie__item-btn btn-link">
+                                            Подробнее
+                                        </a>
+                                        <a href="https://www.youtube.com/" class="freebie__item-btn btn-vidio"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="freebie__container-item">
+                                <div class="freebie__item-img">
+                                    <img src="images/freebie/freebie3.jpg" alt="">
+                                </div>
+                                <div class="freebie__item-info">
+                                    <div class="freebie__item-title">
+                                        Чек-лист по контент продвижению
+                                    </div>
+                                    <div class="freebie__item-option">
+                                        <a href="javascript:void(0)" class="freebie__item-btn btn-link">
+                                            Подробнее
+                                        </a>
+                                        <a href="download/demo.pdf" class="freebie__item-btn btn-download" download></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="projects" class="projects top">
+                <div class="container">
+                    <div class="projects__container">
+                        <h1 class="projects__container-title title">
+                            Мои проекты
+                        </h1>
+                        <div class="projects__container-inner">
+                            <div class="projects__container-item">
+                                <div class="projects__item-info">
+                                    <div class="projects__item-img">
+                                        <img src="images/projects/projects1.jpg" alt="">
+                                        <a href="javascript:void(0)" class="projects__item-shadov">
+                                            <span></span>
+                                        </a>
+                                    </div>
+                                    <div class="projects__item-name">
+                                        <span>Name project</span>
+                                        <a href="javascript:void(0)" class="projects__item-btn btn-white next"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="projects__container-item">
+                                <div class="projects__item-info">
+                                    <div class="projects__item-img">
+                                        <img src="images/projects/projects1.jpg" alt="">
+                                        <a href="javascript:void(0)" class="projects__item-shadov">
+                                            <span></span>
+                                        </a>
+                                    </div>
+                                    <div class="projects__item-name">
+                                        <span>Name project</span>
+                                        <a href="javascript:void(0)" class="projects__item-btn btn-white next"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="projects__container-item">
+                                <div class="projects__item-info">
+                                    <div class="projects__item-img">
+                                        <img src="images/projects/projects1.jpg" alt="">
+                                        <a href="javascript:void(0)" class="projects__item-shadov">
+                                            <span></span>
+                                        </a>
+                                    </div>
+                                    <div class="projects__item-name">
+                                        <span>Name project</span>
+                                        <a href="javascript:void(0)" class="projects__item-btn btn-white next"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="projects__container-item">
+                                <div class="projects__item-info">
+                                    <div class="projects__item-img">
+                                        <img src="images/projects/projects1.jpg" alt="">
+                                        <a href="javascript:void(0)" class="projects__item-shadov">
+                                            <span></span>
+                                        </a>
+                                    </div>
+                                    <div class="projects__item-name">
+                                        <span>Name project</span>
+                                        <a href="javascript:void(0)" class="projects__item-btn btn-white next"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="projects__container-item">
+                                <div class="projects__item-info">
+                                    <div class="projects__item-img">
+                                        <img src="images/projects/projects1.jpg" alt="">
+                                        <a href="javascript:void(0)" class="projects__item-shadov">
+                                            <span></span>
+                                        </a>
+                                    </div>
+                                    <div class="projects__item-name">
+                                        <span>Name project</span>
+                                        <a href="javascript:void(0)" class="projects__item-btn btn-white next"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="projects__container-item">
+                                <div class="projects__item-info">
+                                    <div class="projects__item-img">
+                                        <img src="images/projects/projects1.jpg" alt="">
+                                        <a href="javascript:void(0)" class="projects__item-shadov">
+                                            <span></span>
+                                        </a>
+                                    </div>
+                                    <div class="projects__item-name">
+                                        <span>Name project</span>
+                                        <a href="javascript:void(0)" class="projects__item-btn btn-white next"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="books" class="books top">
+                <div class="container">
+                    <div class="books__container">
+                        <h1 class="books__container-title title">
+                            Книги
+                        </h1>
+                        <div class="books__container-inner">
+                            <div class="books__container-item">
+                                <div class="books__item-img img-foot__left">
+                                    <a href="javascript:void(0)">
+                                        <img src="images/books/books1.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="books__item-info">
+                                    <div class="books__item-title">
+                                        ИММИГРАНТКА<span>.fi</span>
+                                    </div>
+                                    <div class="books__item-text">
+                                        На дворе экономический кризис, дома – кризис семейный. Для того, чтобы поправить
+                                        финансовое положение и спасти любовь, Она покупает себе и мужу билеты, садится
+                                        на
+                                        паром Таллинн – Хельсинки и… совершает побег в новую жизнь.
+                                    </div>
+                                </div>
+                                <div class="books__item-link">
+                                    <a href="javascript:void(0)">Подробнее</a> <span></span>
+                                </div>
+                            </div>
+                            <div class="books__container-item">
+                                <div class="books__item-img img-foot__right">
+                                    <a href="javascript:void(0)">
+                                        <img src="images/books/books2.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="books__item-info">
+                                    <div class="books__item-title">
+                                        ИМПОРТНЫЕ МАМЫ
+                                    </div>
+                                    <div class="books__item-text">
+                                        <p>
+                                            Три девицы под окном пряли поздно вечерком. А наши три девицы уехали в
+                                            тридесятое
+                                            царство, тридесятое государство и вышли замуж за добрых молодцев.
+                                        </p>
+                                        <p>
+                                            Помните, как в
+                                            сказке?
+                                        </p>
+
+                                    </div>
+                                </div>
+                                <div class="books__item-link">
+                                    <a href="javascript:void(0)">Подробнее</a> <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="media" class="aboutMe media top">
+                <div class="container">
+                    <div class="aboutMe__container">
+                        <h1 class="aboutMe__container-title title">
+                            обо мне в медиа
+                        </h1>
+                        <div class="aboutMe__container-info">
+                            <div class="aboutMe__container-text">
+                                <div class="aboutMe__container-paragraf">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut
+                                        labore et dolore magna aliqua.
+                                    </p>
+                                    <p>
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                        aliquip ex ea
+                                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                                        esse cillum
+                                        dolore eu fugiat nulla pariatur.
+                                    </p>
+                                </div>
+                                <div class="aboutMe__container-paragraf">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut
+                                        labore et dolore magna aliqua.
+                                    </p>
+                                    <p>
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                        aliquip ex ea
+                                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                                        esse cillum
+                                        dolore eu fugiat nulla pariatur.
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="aboutMe__container-img">
+                                <div class="aboutMe__container-inner">
+                                    <div class="aboutMe__container-item">
+                                        <img class="wow bounceInUp" data-wow-delay="0.5s"
+                                            src="images/aboutMe/aboutMe4.jpg" alt="">
+                                        <div class="aboutMe__item-child">
+                                            <img class="wow bounceInRight" data-wow-delay="1s"
+                                                src="images/aboutMe/aboutMe1.jpg" alt="">
+                                            <img class="wow bounceInRight" data-wow-delay="1s"
+                                                src="images/aboutMe/aboutMe2.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="aboutMe__container-item wow bounceInDown" data-wow-delay="1.5s"><img
+                                            src="images/aboutMe/aboutMe3.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <section id="contacts" class="contacts top">
+                <div class="container">
+                    <div class="contacts__container">
+                        <h1 class="contacts__container-title title">
+                            Контакты
+                        </h1>
+                        <div class="contacts__container-post">
+                            <div class="contacts__post-title">
+                                Оставьте свою заявку и мы с вами свяжемся
+                            </div>
+                            <div class="contacts__post-inner">
+                                <div class="contacts__post-item">
+                                    <input name="name" type="text" placeholder="Имя">
+                                </div>
+                                <div class="contacts__post-item">
+                                    <input name="post" type="text" placeholder="E-mail">
+                                </div>
+                                <div class="contacts__post-item">
+                                    <button name="button" type="button">Отправить</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacts__container-inner">
+                            <div class="contacts__container-item">
+                                <a class="phone" href="tel:+333333333">+333333333</a>
+                            </div>
+                            <div class="contacts__container-item">
+                                <a class="inst" href="javascript:void(0)">ksenia.malkki</a>
+                            </div>
+                            <div class="contacts__container-item">
+                                <a class="post" href="javascript:void(0)">pochta@gmail.com</a>
+                            </div>
+                            <div class="contacts__container-item">
+                                <a class="facebook" href="javascript:void(0)">ksenia.malkki</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__container">
+                    <div class="footer__container-info">
+                        <a href="#swiper">
+                            <img src="images/logo/logo_2.svg" alt="logo">
+                        </a>
+                        <span>
+                            © 2020 Все права защищены
+                        </span>
+                        <span>
+                            Developer
+                            <a href="javascript:void(0)">
+                                ProSofta
+                            </a>
+                        </span>
+                    </div>
+                    <script src="js/libs.min.js"></script>
+                </div>
+        </footer>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        const swiperH = new Swiper('.swiper-container-h', {
+            direction: 'horizontal',
+            spaceBetween: 50,
+            slidesPerView: 1,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            speed: 1000,
+            controller: false,
+            on: {
+                init: function () {
+                    checkArrow();
+                },
+                resize: function () {
+                    checkArrow();
+                }
+            },
+        });
+
+        function checkArrow() {
+            var swiperPrev = document.querySelector('.swiper-button-prev');
+            var swiperNext = document.querySelector('.swiper-button-next');
+            var pigination = document.querySelector('.pigination-box'); 
+            if (window.innerWidth > 1150) {
+                swiperPrev.style.display = 'block';
+                swiperNext.style.display = 'block';
+                pigination.style.display = 'block'; 
+            } else {
+                swiperPrev.style.display = 'none';
+                swiperNext.style.display = 'none';
+                pigination.style.display = 'none';  
+            }
+        }
+    </script>
 </body>
 
 </html>
